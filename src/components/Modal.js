@@ -66,6 +66,13 @@ const TechnologyTag = ({ name }) => {
 };
 
 const Modal = ({ hide, value, isOpen }) => {
+  const { imgSrc, links, title, technologies, body } = value;
+  let mainLink = '#';
+
+  if (links) {
+    mainLink = links.visit ? links.visit : links.source;
+  }
+
   const closeRef = useRef();
   const [expanded, setExpanded] = useState(false);
 
@@ -110,10 +117,10 @@ const Modal = ({ hide, value, isOpen }) => {
             style={headerStyles}
           >
             <img
-              src={value.imgSrc}
+              src={imgSrc}
               className="w-48 h-48 mx-auto mb-4 shadow-lg relative z-10 h-64 bg-gray-100"
               style={imageStyles}
-              alt={`${value.title} logo`}
+              alt={`${title} logo`}
             />
             
             <p
@@ -122,18 +129,18 @@ const Modal = ({ hide, value, isOpen }) => {
             >
               <a
                 id="modal-title"
-                href={value.href}
+                href={mainLink}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-indigo-100"
               >
-                {value.title}
+                {title}
               </a>
             </p>
 
             <ul className="flex max-w-screen-sm flex-wrap self-start md:ml-2 mt-2 justify-center md:justify-start">
-              {value.technologies && value.technologies.map(technology => (
-                <li key={`${value.title}-${technology}`}>
+              {technologies && technologies.map(technology => (
+                <li key={`${title}-${technology}`}>
                   <TechnologyTag name={technology} />
                 </li>
               ))}
@@ -141,13 +148,21 @@ const Modal = ({ hide, value, isOpen }) => {
           </header>
 
           <div className="leading-relaxed md:leading-loose text-lg mt-8">
-            {value.body}
+            {body}
           </div>
 
           <div className="w-full flex justify-center">
-            <Button href={value.href} target="_blank" className="mb-4 mt-8">
-              Visit
-            </Button>
+            {links && links.visit && (
+              <Button href={links.visit} target="_blank" className="mb-4 mt-8">
+                Visit
+              </Button>
+            )}
+
+            {links && links.source && (
+              <Button href={links.source} target="_blank" className="mb-4 mt-8 ml-6 first:ml-0">
+                View source
+              </Button>
+            )}
           </div>
         </article>
       </div>

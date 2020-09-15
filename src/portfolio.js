@@ -6,7 +6,10 @@ import pixelDrawing from './assets/images/pixels.png';
 const alglang = {
   title: 'Database of Algonquian Language Structures',
   imgSrc: 'https://github.com/alglang/alglang/blob/master/public/images/favicon/android-chrome-512x512.png?raw=true',
-  href: 'https://preview.alglang.net',
+  links: {
+    visit: 'https://preview.alglang.net',
+    source: 'https://github.com/alglang/alglang'
+  },
   description: 'A project to provide basic information about the sounds and grammar of the Algonquian languages',
   technologies: [
     'PHP',
@@ -39,7 +42,9 @@ const alglang = {
 const countdown = {
   title: 'Countdown',
   imgSrc: 'https://github.com/adoxography/countdown/blob/master/assets/icon.png?raw=true',
-  href: 'https://github.com/adoxography/countdown',
+  links: {
+    source: 'https://github.com/adoxography/countdown'
+  },
   description: 'A simple, unobtrusive timer app for MacOS that can float over fullscreen windows',
   technologies: [
     'React',
@@ -64,7 +69,9 @@ const countdown = {
 const streamlined = {
   title: 'Streamlined Genre',
   imgSrc: 'https://cdn.pixabay.com/photo/2014/12/14/10/26/light-567757_1280.jpg',
-  href: 'https://github.com/adoxography/streamlined-genre',
+  links: {
+    source: 'https://github.com/adoxography/streamlined-genre'
+  },
   description: 'My master\'s project, classifying genre of spoken audio samples',
   technologies: [
     'Python',
@@ -84,7 +91,10 @@ const streamlined = {
 const pixels = {
   title: 'Pixel drawing',
   imgSrc: pixelDrawing,
-  href: 'https://adoxography.github.io/pixel-drawing/',
+  links: {
+    visit: 'https://adoxography.github.io/pixel-drawing/',
+    source: 'https://github.com/adoxography/pixel-drawing'
+  },
   description: 'A web app for teaching computational thinking with art',
   technologies: [
     'JavaScript',
@@ -105,7 +115,10 @@ const pixels = {
 const showdown = {
   title: 'Manitoba Showdown',
   imgSrc: 'https://github.com/adoxography/the-showdown/blob/master/logo.png?raw=true',
-  href: 'https://manitobashowdown.ca/',
+  links: {
+    visit: 'https://manitobashowdown.ca/',
+    source: 'https://github.com/adoxography/the-showdown'
+  },
   description: 'Proof-of-concept for a social media-connected web app',
   technologies: [
     'React',
@@ -126,7 +139,9 @@ const showdown = {
 const dagaare = {
   title: 'Dagaare Grammar',
   imgSrc: 'https://upload.wikimedia.org/wikipedia/commons/b/b8/She-avm.png',
-  href: 'https://github.com/adoxography/dagaare-grammar',
+  links: {
+    source: 'https://github.com/adoxography/dagaare-grammar'
+  },
   description: 'A grammar for the Ghanaian language Dagaare, expressed using the HPSG framework',
   technologies: [
     'HPSG',
@@ -146,7 +161,9 @@ const dagaare = {
 const neam = {
   title: 'NEAM',
   imgSrc: 'https://i.pinimg.com/150x150/cd/78/23/cd782352d4a7031c375f5faeed2f8ea7.jpg',
-  href: 'https://github.com/Linguistics575/neam',
+  links: {
+    source: 'https://github.com/Linguistics575/neam'
+  },
   description: 'Automated named entity markup on historical texts',
   technologies: [
     'Java',
@@ -166,7 +183,9 @@ const neam = {
 const portfolio = {
   title: 'gstill.dev',
   imgSrc: 'https://avatars2.githubusercontent.com/u/23176291?s=460&u=7ecb99c2e34345e19779cab4dfdff6c5787bed82&v=4',
-  href: 'https://gstill.dev',
+  links: {
+    source: 'https://github.com/adoxography/gstill.dev'
+  },
   description: 'The site you\'re looking at right now!',
   technologies: [
     'React',
@@ -187,7 +206,10 @@ const portfolio = {
 const bettyBot = {
   title: 'Betty Bot',
   imgSrc: chatbotAvatar,
-  href: 'https://ChatbotTemplate.gstill.repl.co',
+  links: {
+    visit: 'https://ChatbotTemplate.gstill.repl.co',
+    source: 'https://repl.it/@GStill/ChatbotTemplate#bot.js'
+  },
   description: 'A starting template for exploring JavaScript in a chatbot setting',
   technologies: [
     'JavaScript',
