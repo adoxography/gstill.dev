@@ -1,7 +1,7 @@
 import React from 'react';
 
-const SocialLink = ({ href, cls }) => (
-  <a href={href} className="p-2 hover:opacity-75">
+const SocialLink = ({ name,  href, cls }) => (
+  <a href={href} className="p-2 hover:opacity-75" aria-label="name">
     <i className={`fab ${cls}`}></i>
   </a>
 );
@@ -14,11 +14,19 @@ const Footer = () => (
 
     <ul className="flex justify-center mt-8">
       <li className="mx-2">
-        <SocialLink href="https://github.com/adoxography" cls="fa-github" />
+        <SocialLink
+          name="Github"
+          href="https://github.com/adoxography"
+          cls="fa-github"
+        />
       </li>
 
       <li className="mx-2">
-        <SocialLink href="https://www.linkedin.com/in/graham-still-a4ab141a2/" cls="fa-linkedin" />
+        <SocialLink
+          name="LinkedIn"
+          href="https://www.linkedin.com/in/graham-still-a4ab141a2/"
+          cls="fa-linkedin"
+        />
       </li>
     </ul>
   </footer>
