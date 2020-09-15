@@ -1,0 +1,36 @@
+{
+  "name": "creap",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "autoprefixer": "^9.8.6",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-scripts": "3.2.0",
+    "tailwindcss": "^1.8.8"
+  },
+  "scripts": {
+    "build:style": "tailwind build src/assets/styles/index.css -o src/assets/styles/tailwind.css",
+    "watch:style": "tailwind build src/assets/styles/index.css -o src/assets/styles/tailwind.css",
+    "start": "yarn watch:style && react-scripts start",
+    "build": "yarn build:style && react-scripts build"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
