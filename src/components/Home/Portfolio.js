@@ -8,16 +8,12 @@ const portfolioStyles = {
 const PortfolioItem = ({ value, onClick }) => {
   const { href, imgSrc, title, description } = value;
 
-  const handleClick = evt => {
-    evt.preventDefault();
-    onClick(value);
-  };
+  const handleClick = () => onClick(value);
 
   return (
     <div className="bg-indigo-600 overflow-hidden relative">
       <a
-        href={href}
-        className="group focus:z-10"
+        className="group focus:z-10 cursor-pointer"
         onClick={handleClick}
       >
         <img
