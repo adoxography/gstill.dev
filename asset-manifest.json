@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/alglang.dev/static/css/main.b433b417.chunk.css",
-    "main.js": "/alglang.dev/static/js/main.523fa040.chunk.js",
-    "main.js.map": "/alglang.dev/static/js/main.523fa040.chunk.js.map",
-    "runtime-main.js": "/alglang.dev/static/js/runtime-main.e1b68736.js",
-    "runtime-main.js.map": "/alglang.dev/static/js/runtime-main.e1b68736.js.map",
-    "static/js/2.9ea747d9.chunk.js": "/alglang.dev/static/js/2.9ea747d9.chunk.js",
-    "static/js/2.9ea747d9.chunk.js.map": "/alglang.dev/static/js/2.9ea747d9.chunk.js.map",
-    "index.html": "/alglang.dev/index.html",
-    "precache-manifest.bd7dd01ea4c84c79b4485fcb083b73a4.js": "/alglang.dev/precache-manifest.bd7dd01ea4c84c79b4485fcb083b73a4.js",
-    "service-worker.js": "/alglang.dev/service-worker.js",
-    "static/css/main.b433b417.chunk.css.map": "/alglang.dev/static/css/main.b433b417.chunk.css.map",
-    "static/media/pixels.png": "/alglang.dev/static/media/pixels.c2330568.png",
-    "static/media/robot.svg": "/alglang.dev/static/media/robot.22d21d45.svg"
+    "main.css": "/gstill.dev/static/css/main.bee26e76.chunk.css",
+    "main.js": "/gstill.dev/static/js/main.523fa040.chunk.js",
+    "main.js.map": "/gstill.dev/static/js/main.523fa040.chunk.js.map",
+    "runtime-main.js": "/gstill.dev/static/js/runtime-main.a54e752a.js",
+    "runtime-main.js.map": "/gstill.dev/static/js/runtime-main.a54e752a.js.map",
+    "static/js/2.9ea747d9.chunk.js": "/gstill.dev/static/js/2.9ea747d9.chunk.js",
+    "static/js/2.9ea747d9.chunk.js.map": "/gstill.dev/static/js/2.9ea747d9.chunk.js.map",
+    "index.html": "/gstill.dev/index.html",
+    "precache-manifest.038d0b6284dc1088731b7ec3739b7c86.js": "/gstill.dev/precache-manifest.038d0b6284dc1088731b7ec3739b7c86.js",
+    "service-worker.js": "/gstill.dev/service-worker.js",
+    "static/css/main.bee26e76.chunk.css.map": "/gstill.dev/static/css/main.bee26e76.chunk.css.map",
+    "static/media/pixels.png": "/gstill.dev/static/media/pixels.c2330568.png",
+    "static/media/robot.svg": "/gstill.dev/static/media/robot.22d21d45.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.e1b68736.js",
+    "static/js/runtime-main.a54e752a.js",
     "static/js/2.9ea747d9.chunk.js",
-    "static/css/main.b433b417.chunk.css",
+    "static/css/main.bee26e76.chunk.css",
     "static/js/main.523fa040.chunk.js"
   ]
 }
