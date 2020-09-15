@@ -118,7 +118,7 @@ const Modal = ({ hide, value, isOpen }) => {
           >
             <img
               src={imgSrc}
-              className="w-48 h-48 mx-auto mb-4 shadow-lg relative z-10 h-64 bg-gray-100"
+              className="w-48 h-48 mx-auto mb-4 shadow-lg relative z-10 h-64 bg-gray-100 object-cover"
               style={imageStyles}
               alt={`${title} logo`}
             />
