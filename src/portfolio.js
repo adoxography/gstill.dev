@@ -2,10 +2,11 @@ import React from 'react';
 
 import chatbotAvatar from './assets/images/robot.svg';
 import pixelDrawing from './assets/images/pixels.png';
+import alglangLogo from './assets/images/alglang.svg';
 
 const alglang = {
   title: 'Database of Algonquian Language Structures',
-  imgSrc: 'https://github.com/alglang/alglang/blob/master/public/images/favicon/android-chrome-512x512.png?raw=true',
+  imgSrc: alglangLogo,
   links: {
     visit: 'https://preview.alglang.net',
     source: 'https://github.com/alglang/alglang'
