@@ -65,7 +65,57 @@ const TechnologyTag = ({ name }) => {
   );
 };
 
+const ShowMore = () => (
+  <div class="absolute flex w-full bottom-0 justify-center mb-8">
+
+    <svg class="animate-bounce w-8 h-8 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+    </svg>
+  </div>
+);
+
+const ButtonPanel = ({ links, onIntersectChange }) => {
+  const ref = useRef();
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(([entry]) => onIntersectChange(!entry.isIntersecting));
+
+    if (ref.current) {
+      observer.observe(ref.current);
+    }
+  }, [onIntersectChange]);
+
+  return (
+    <div
+      ref={ref}
+      className="w-full flex justify-center items-baseline"
+    >
+      {links && links.visit && (
+        <Button
+          href={links.visit}
+          target="_blank"
+          className="mb-4 mt-8"
+        >
+          Visit
+        </Button>
+      )}
+
+      {links && links.source && (
+        <Button
+          href={links.source}
+          target="_blank"
+          type={links.visit ? 'link' : 'button'}
+          className="mb-4 mt-8 ml-6 first:ml-0"
+        >
+          View source
+        </Button>
+      )}
+    </div>
+  )
+};
+
 const Modal = ({ hide, value, isOpen }) => {
+  const [hasMoreContent, setHasMoreContent] = useState(false);
   const { imgSrc, links, title, technologies, body } = value;
   let mainLink = '#';
 
@@ -151,29 +201,10 @@ const Modal = ({ hide, value, isOpen }) => {
             {body}
           </div>
 
-          <div className="w-full flex justify-center items-baseline">
-            {links && links.visit && (
-              <Button
-                href={links.visit}
-                target="_blank"
-                className="mb-4 mt-8"
-              >
-                Visit
-              </Button>
-            )}
-
-            {links && links.source && (
-              <Button
-                href={links.source}
-                target="_blank"
-                type={mainLink === links.source ? 'button' : 'link'}
-                className="mb-4 mt-8 ml-6 first:ml-0"
-              >
-                View source
-              </Button>
-            )}
-          </div>
+          <ButtonPanel links={links} onIntersectChange={setHasMoreContent} />
         </article>
+
+        {hasMoreContent && <ShowMore />}
       </div>
     </div>
   );
