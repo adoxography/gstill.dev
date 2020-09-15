@@ -6,14 +6,14 @@ const portfolioStyles = {
 }
 
 const PortfolioItem = ({ value, onClick }) => {
-  const { href, imgSrc, title, description } = value;
+  const { imgSrc, title, description } = value;
 
   const handleClick = () => onClick(value);
 
   return (
     <div className="bg-indigo-600 overflow-hidden relative">
-      <a
-        className="group focus:z-10 cursor-pointer"
+      <button
+        className="contents group focus:z-10 cursor-pointer"
         onClick={handleClick}
       >
         <img
@@ -33,7 +33,7 @@ const PortfolioItem = ({ value, onClick }) => {
             {description}
           </p>
         </div>
-      </a>
+      </button>
     </div>
   );
 };
