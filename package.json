@@ -1,5 +1,5 @@
 {
-  "name": "creap",
+  "name": "gstill.dev",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -13,7 +13,7 @@
     "tailwindcss": "^1.8.8"
   },
   "scripts": {
-    "build:style": "tailwind build src/assets/styles/index.css -o src/assets/styles/tailwind.css",
+    "build:style": "NODE_ENV=production tailwind build src/assets/styles/index.css -o src/assets/styles/tailwind.css",
     "watch:style": "tailwind build src/assets/styles/index.css -o src/assets/styles/tailwind.css",
     "start": "yarn watch:style && react-scripts start",
     "build": "yarn build:style && react-scripts build"
