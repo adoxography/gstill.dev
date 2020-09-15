@@ -151,15 +151,24 @@ const Modal = ({ hide, value, isOpen }) => {
             {body}
           </div>
 
-          <div className="w-full flex justify-center">
+          <div className="w-full flex justify-center items-baseline">
             {links && links.visit && (
-              <Button href={links.visit} target="_blank" className="mb-4 mt-8">
+              <Button
+                href={links.visit}
+                target="_blank"
+                className="mb-4 mt-8"
+              >
                 Visit
               </Button>
             )}
 
             {links && links.source && (
-              <Button href={links.source} target="_blank" className="mb-4 mt-8 ml-6 first:ml-0">
+              <Button
+                href={links.source}
+                target="_blank"
+                type={mainLink === links.source ? 'button' : 'link'}
+                className="mb-4 mt-8 ml-6 first:ml-0"
+              >
                 View source
               </Button>
             )}
