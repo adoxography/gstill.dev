@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.5aa7e9e5.chunk.css",
-    "main.js": "/static/js/main.0b6285b7.chunk.js",
-    "main.js.map": "/static/js/main.0b6285b7.chunk.js.map",
+    "main.js": "/static/js/main.b7473ac8.chunk.js",
+    "main.js.map": "/static/js/main.b7473ac8.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.e445f824.js",
     "runtime-main.js.map": "/static/js/runtime-main.e445f824.js.map",
     "static/js/2.66773fee.chunk.js": "/static/js/2.66773fee.chunk.js",
     "static/js/2.66773fee.chunk.js.map": "/static/js/2.66773fee.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.cd86bab055d9878f97945f6fa6fc335f.js": "/precache-manifest.cd86bab055d9878f97945f6fa6fc335f.js",
+    "precache-manifest.078d499cf46a7704fed47d99b1303892.js": "/precache-manifest.078d499cf46a7704fed47d99b1303892.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.5aa7e9e5.chunk.css.map": "/static/css/main.5aa7e9e5.chunk.css.map",
     "static/media/alglang.svg": "/static/media/alglang.9877b06f.svg",
@@ -19,6 +19,6 @@
     "static/js/runtime-main.e445f824.js",
     "static/js/2.66773fee.chunk.js",
     "static/css/main.5aa7e9e5.chunk.css",
-    "static/js/main.0b6285b7.chunk.js"
+    "static/js/main.b7473ac8.chunk.js"
   ]
 }
