@@ -1,7 +1,7 @@
 import React from 'react';
 
 const SocialLink = ({ name,  href, cls }) => (
-  <a href={href} className="p-2 hover:opacity-75" aria-label="name">
+  <a href={href} target="_blank" rel="noopener noreferrer" className="p-2 hover:opacity-75" aria-label="name">
     <i className={`fab ${cls}`}></i>
   </a>
 );
