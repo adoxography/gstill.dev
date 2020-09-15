@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/gstill.dev/static/css/main.bee26e76.chunk.css",
-    "main.js": "/gstill.dev/static/js/main.523fa040.chunk.js",
-    "main.js.map": "/gstill.dev/static/js/main.523fa040.chunk.js.map",
-    "runtime-main.js": "/gstill.dev/static/js/runtime-main.a54e752a.js",
-    "runtime-main.js.map": "/gstill.dev/static/js/runtime-main.a54e752a.js.map",
-    "static/js/2.9ea747d9.chunk.js": "/gstill.dev/static/js/2.9ea747d9.chunk.js",
-    "static/js/2.9ea747d9.chunk.js.map": "/gstill.dev/static/js/2.9ea747d9.chunk.js.map",
-    "index.html": "/gstill.dev/index.html",
-    "precache-manifest.038d0b6284dc1088731b7ec3739b7c86.js": "/gstill.dev/precache-manifest.038d0b6284dc1088731b7ec3739b7c86.js",
-    "service-worker.js": "/gstill.dev/service-worker.js",
-    "static/css/main.bee26e76.chunk.css.map": "/gstill.dev/static/css/main.bee26e76.chunk.css.map",
-    "static/media/pixels.png": "/gstill.dev/static/media/pixels.c2330568.png",
-    "static/media/robot.svg": "/gstill.dev/static/media/robot.22d21d45.svg"
+    "main.css": "/static/css/main.bee26e76.chunk.css",
+    "main.js": "/static/js/main.523fa040.chunk.js",
+    "main.js.map": "/static/js/main.523fa040.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.f294effb.js",
+    "runtime-main.js.map": "/static/js/runtime-main.f294effb.js.map",
+    "static/js/2.9ea747d9.chunk.js": "/static/js/2.9ea747d9.chunk.js",
+    "static/js/2.9ea747d9.chunk.js.map": "/static/js/2.9ea747d9.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.331b1f206576b7241f97edbf103bb9bd.js": "/precache-manifest.331b1f206576b7241f97edbf103bb9bd.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.bee26e76.chunk.css.map": "/static/css/main.bee26e76.chunk.css.map",
+    "static/media/pixels.png": "/static/media/pixels.c2330568.png",
+    "static/media/robot.svg": "/static/media/robot.22d21d45.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.a54e752a.js",
+    "static/js/runtime-main.f294effb.js",
     "static/js/2.9ea747d9.chunk.js",
     "static/css/main.bee26e76.chunk.css",
     "static/js/main.523fa040.chunk.js"
