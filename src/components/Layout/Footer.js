@@ -8,8 +8,8 @@ const SocialLink = ({ href, cls }) => (
 
 const Footer = () => (
   <footer className="bg-gray-900 text-indigo-600 text-center py-10 text-2xl">
-    <a href="mailto:foo@bar.net" className="font-semibold hover:opacity-75">
-      foo@bar.net
+    <a href="mailto:graham@gstill.dev" className="font-semibold hover:opacity-75">
+      graham@gstill.dev
     </a>
 
     <ul className="flex justify-center mt-8">
