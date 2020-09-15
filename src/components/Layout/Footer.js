@@ -18,11 +18,7 @@ const Footer = () => (
       </li>
 
       <li className="mx-2">
-        <SocialLink href="https://linkedin.com" cls="fa-linkedin" />
-      </li>
-
-      <li className="mx-2">
-        <SocialLink href="https://twitter.com" cls="fa-twitter" />
+        <SocialLink href="https://www.linkedin.com/in/graham-still-a4ab141a2/" cls="fa-linkedin" />
       </li>
     </ul>
   </footer>
