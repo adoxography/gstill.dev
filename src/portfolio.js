@@ -3,6 +3,7 @@ import React from 'react';
 import chatbotAvatar from './assets/images/robot.svg';
 import pixelDrawing from './assets/images/pixels.png';
 import alglangLogo from './assets/images/alglang.svg';
+import gstillLogo from './assets/images/logo.png';
 
 const alglang = {
   title: 'Database of Algonquian Language Structures',
@@ -189,7 +190,7 @@ const neam = {
 
 const portfolio = {
   title: 'gstill.dev',
-  imgSrc: 'https://avatars2.githubusercontent.com/u/23176291?s=460&u=7ecb99c2e34345e19779cab4dfdff6c5787bed82&v=4',
+  imgSrc: gstillLogo,
   links: {
     source: 'https://github.com/adoxography/gstill.dev'
   },
@@ -204,7 +205,11 @@ const portfolio = {
   body: (
     <>
       <p>
-        Description coming soon
+        The layout for this site was unashamedly taken from <a href="https://www.kevinpowell.co/" target="_blank" rel="noopener noreferrer">Kevin Powell</a>'s excellent course, <a href="https://scrimba.com/learn/portfolio" target="_blank" rel="noopener noreferrer"><strong>Build and deploy a portfolio on Digital Ocean</strong></a>. I've reimplemented it in React and Tailwind because&hellip;well, I just thought it would be fun! Most of the interactivity is original, though I'll let you judge for yourself whether it's effective or not. I also chose to deploy it over Github Pages through the use of a Github Action, instead of deploying it on Digital Ocean.
+      </p>
+
+      <p className="mt-6">
+        I've had a lot of fun making this site, and I hope you enjoy reading it!
       </p>
     </>
   )
