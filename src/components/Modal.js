@@ -165,7 +165,7 @@ const Modal = ({ hide, value, isOpen }) => {
         aria-labelledby="modal-title"
       >
         <button
-          className="absolute top-0 right-0 m-4"
+          className="absolute top-0 right-0 m-4 text-xl px-2 z-50"
           onClick={hide}
           ref={closeRef}
           aria-label="Close"
@@ -174,7 +174,7 @@ const Modal = ({ hide, value, isOpen }) => {
         </button>
 
         <article
-          className="h-full overflow-y-auto px-8 lg:p-12"
+          className="h-full overflow-y-auto px-4 md:px-8 lg:p-12"
           ref={articleRef}
         >
           <header
