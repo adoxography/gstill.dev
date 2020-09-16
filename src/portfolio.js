@@ -132,7 +132,7 @@ const showdown = {
   body: (
     <>
       <p>
-        Description coming soon
+        This project is a proof-of-concept demonstration for a website that uses social media platforms as its back-end. The folks at the Manitoba Showdown were looking to create a site to augment their existing Instagram and YouTube presence. Instead of running its own database, this site uses the Instagram and YouTube APIs to populate its content.
       </p>
     </>
   )
