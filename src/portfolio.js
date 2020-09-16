@@ -169,13 +169,19 @@ const neam = {
   technologies: [
     'Java',
     'Python',
+    'JPype',
+    'BeautifulSoup',
     'Stanford Parser',
     'Wikidata'
   ],
   body: (
     <>
       <p>
-        Description coming soon
+        I worked on NEAM along with <a href="https://www.linkedin.com/in/vanessawoldengaracine" target="_blank" rel="noopener noreferrer">Sunny Woldenga-Racine</a> and <a href="https://www.linkedin.com/in/chrishaberland/" target="_blank" rel="noopener noreferrer">Chris Haberland</a> as part of a special topics course at the University of Washington taught by <a href="https://nelc.washington.edu/people/sarah-ketchley" target="_blank" rel="noopener noreferrer">Sarah Ketchley</a>. The goal of the course was to augment historical documents gathered by and for the <a href="http://www.emmabandrews.org/project/" target="_blank" rel="noopener noreferrer">Emma B. Andrews Diary Project</a>. We leveraged the <a href="https://nlp.stanford.edu/software/CRF-NER.html" target="_blank" rel="noopener noreferrer">Stanford Named Entity Recognizer</a> to tag named entities within Emma B. Andrews' journals for cross-referencing.
+      </p>
+
+      <p className="mt-6">
+        Among my larger contributions to the project was the use of <code>JPype</code> to bring the Stanford Parser into a Python setting. Our team as a whole was more comfortable with Python than Java, so this enabled us to work more cohesively on the project.
       </p>
     </>
   )

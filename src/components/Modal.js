@@ -26,7 +26,9 @@ const tagLinks = {
   'HTML': 'https://developer.mozilla.org/en-US/docs/Web/HTML',
   'CSS': 'https://developer.mozilla.org/en-US/docs/Web/CSS',
   'JavaScript': 'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
-  'BEM': 'http://getbem.com/'
+  'BEM': 'http://getbem.com/',
+  'JPype': 'https://jpype.readthedocs.io/en/latest/',
+  'BeautifulSoup': 'https://www.crummy.com/software/BeautifulSoup/bs4/doc/'
 };
 
 const headerStyles = {
