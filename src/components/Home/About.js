@@ -1,4 +1,5 @@
 import React, { useEffect, useState, useRef } from 'react';
+import aboutImage from '../../assets/images/about_image.jpg';
 
 const subtitleStyle = {
   gridColumn: '1 / -1',
@@ -59,9 +60,9 @@ const About = () => {
       </div>
 
       <img
-        src="https://placekitten.com/500/1000"
+        src={aboutImage}
         alt="Graham Still"
-        className={`block max-w-full shadow-lg relative z-10 mt-6 md:mt-0 transform md:scale-y-0 origin-top transition-all duration-500 ease-in-out h-96 ${imageInView ? 'md:scale-y-100' : ''}`}
+        className={`block max-w-full shadow-lg relative z-10 mt-6 md:mt-0 object-cover transform md:scale-y-0 origin-top transition-all duration-500 ease-in-out h-96 ${imageInView ? 'md:scale-y-100' : ''}`}
         style={imgStyle}
       />
     </section>

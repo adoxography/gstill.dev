@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
+import profileImage from '../../assets/images/profile_image.jpg';
 
 const sectionStyles = {
   gridTemplateAreas: '"img title" "img subtitle"',
@@ -84,9 +85,9 @@ const Header = ({ setCanScroll, setNavbarGhost }) => {
         </p>
 
         <img
-          src="https://placekitten.com/300"
+          src={profileImage}
           alt="Graham Still"
-          className={`shadow-lg relative z-10 h-64 transform scale-y-0 transition-all duration-500 ease-in-out origin-top ${imageInView ? 'scale-y-100' : ''}`}
+          className={`shadow-lg relative z-10 h-64 transform scale-y-0 object-cover transition-all duration-500 ease-in-out origin-top ${imageInView ? 'scale-y-100' : ''}`}
           style={imageStyles}
         />
       </div>
