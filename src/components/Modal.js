@@ -129,18 +129,25 @@ const Modal = ({ hide, value, isOpen }) => {
   }
 
   const closeRef = useRef();
+  const articleRef = useRef();
   const [expanded, setExpanded] = useState(false);
 
   useEffect(() => {
     if (isOpen) {
       setExpanded(true);
+
       if (closeRef.current) {
         closeRef.current.focus();
+      }
+
+      if (articleRef.current) {
+        articleRef.current.scrollTop = 0;
+        articleRef.current.scrollLeft = 0;
       }
     } else {
       setExpanded(false);
     }
-  }, [isOpen, closeRef]);
+  }, [isOpen, articleRef, closeRef]);
 
   return (
     <div
@@ -166,7 +173,10 @@ const Modal = ({ hide, value, isOpen }) => {
           X
         </button>
 
-        <article className="h-full overflow-y-auto px-8 lg:p-12">
+        <article
+          className="h-full overflow-y-auto px-8 lg:p-12"
+          ref={articleRef}
+        >
           <header
             className="md:grid w-fit mx-auto"
             style={headerStyles}
