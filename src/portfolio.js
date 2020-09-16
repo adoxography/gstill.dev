@@ -216,12 +216,17 @@ const bettyBot = {
     'JavaScript',
     'HTML',
     'CSS',
+    'BEM',
     'Express.js'
   ],
   body: (
     <>
       <p>
-        Description coming soon
+        I wrote <strong>Betty Bot</strong> as a starter template for a JavaScript chatbot, based on an assignment I had in grad school. Learners simply need to complete three functions in <code>bot.js</code>, and they'll immediately have a functioning chatbot. I leveraged the ability of <code><a href="https://repl.it" target="_blank" rel="noopener noreferrer">repl.it</a></code> to run persistent webservers to make the project even more extensible: using the chatbot they had already created, learners can treat their bot as a Web API for incorporation into, e.g., a discord bot. Chatbots can also be combined; using this same idea of a chatbot as a Web API, I created an example "<a href="https://repl.it/@GStill/ConversationHost" target="_blank" rel="noopener noreferrer">chatroom for chatbots</a>."
+      </p>
+
+      <p className="mt-6">
+        Because the focus for this type of application is to learn JavaScript specifically, I wanted to prewrite all of the interface code, so that learners could have something that looks nice if they chose to share their project with others. To keep the code as accessible and hackable as possible, the interface is written in completely custom vanilla JavaScript and CSS.
       </p>
     </>
   )
