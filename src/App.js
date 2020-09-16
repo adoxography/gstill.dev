@@ -5,11 +5,16 @@ import Footer from './components/Layout/Footer';
 import Modal from './components/Modal';
 
 const App = () => {
+  const [splashMode, setSplashMode] = useState(true);
   const [canScroll, setCanScroll] = useState(false);
   const [navbarGhost, setNavbarGhost] = useState(true);
   const [modalProps, setModalProps] = useState({});
   const [modalOpen, setModalOpen] = useState(false);
 
+  const endSplashMode = () => {
+    setSplashMode(false);
+    setCanScroll(true);
+  };
   const hideModal = () => setModalOpen(false);
   const openModal = state => {
     setModalOpen(true);
@@ -17,10 +22,10 @@ const App = () => {
   };
 
   return (
-    <div className={`h-screen ${canScroll ? '' : 'overflow-hidden'}`}>
-      <Nav transparent={navbarGhost} />
+    <div className={`h-screen ${canScroll ? 'overflow-auto' : 'overflow-hidden'}`}>
+      <Nav transparent={navbarGhost} isHidden={splashMode} />
 
-      <Home setCanScroll={setCanScroll} setNavbarGhost={setNavbarGhost} openModal={openModal} />
+      <Home endSplashMode={endSplashMode} setNavbarGhost={setNavbarGhost} openModal={openModal} />
 
       <Modal value={modalProps} isOpen={modalOpen} hide={hideModal} />
 

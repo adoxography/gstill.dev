@@ -4,9 +4,9 @@ import Services from './Services';
 import About from './About';
 import Portfolio from './Portfolio';
 
-const Home = ({ setCanScroll, setNavbarGhost, openModal }) => (
+const Home = ({ endSplashMode, setNavbarGhost, openModal }) => (
   <>
-    <Header setCanScroll={setCanScroll} setNavbarGhost={setNavbarGhost} />
+    <Header endSplashMode={endSplashMode} setNavbarGhost={setNavbarGhost} />
     <Services />
     <About />
     <Portfolio openModal={openModal} />

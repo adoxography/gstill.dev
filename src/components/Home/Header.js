@@ -16,7 +16,7 @@ const imageStyles = {
   minWidth: '250px'
 };
 
-const Header = ({ setCanScroll, setNavbarGhost }) => {
+const Header = ({ endSplashMode, setNavbarGhost }) => {
   const ref = useRef();
 
   const [pageLoaded, setPageLoaded] = useState(false);
@@ -27,15 +27,15 @@ const Header = ({ setCanScroll, setNavbarGhost }) => {
   useEffect(() => {
     if (window.location.hash === '') {
       setTimeout(() => {
-        setCanScroll(true);
+        endSplashMode();
         setPageLoaded(true);
       }, 1500);
     } else {
       setShouldTransition(false);
       setPageLoaded(true);
-      setCanScroll(true);
+      endSplashMode();
     }
-  }, [setCanScroll]);
+  }, [endSplashMode]);
 
   useEffect(() => {
     const observer = new IntersectionObserver(([entry]) => {

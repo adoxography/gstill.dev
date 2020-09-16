@@ -26,7 +26,7 @@ const NavList = ({ open, onNavigate }) => (
   </nav>
 );
 
-const Header = ({ transparent = true }) => {
+const Nav = ({ isHidden, transparent }) => {
   const [navOpen, setNavOpen] = useState(false);
 
   const toggleNav = () => setNavOpen(!navOpen);
@@ -34,7 +34,7 @@ const Header = ({ transparent = true }) => {
   const handleNavigate = () => setNavOpen(false);
 
   return (
-    <header className={`flex justify-between fixed w-full z-40 transition-all duration-500 ease-in-out ${transparent ? 'p-4' : 'p-2 bg-gray-800'}`}>
+    <header className={`flex justify-between fixed w-full z-40 transition-all duration-500 ease-in-out ${isHidden ? 'opacity-0' : 'opacity-100'} ${transparent ? 'p-4' : 'p-2 bg-gray-800'}`}>
       <div className="logo">
         <Logo className="w-8 fill-current" />
       </div>
@@ -52,4 +52,4 @@ const Header = ({ transparent = true }) => {
   );
 };
 
-export default Header;
+export default Nav;
