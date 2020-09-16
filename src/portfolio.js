@@ -144,17 +144,22 @@ const dagaare = {
   links: {
     source: 'https://github.com/adoxography/dagaare-grammar'
   },
-  description: 'A grammar for the Ghanaian language Dagaare, expressed using the HPSG framework',
+  description: 'A grammar for the Dagaare (a language spoken in Ghana), expressed using the HPSG framework',
   technologies: [
     'HPSG',
     'LinGo Grammar Matrix',
     '[incr tsdb()]',
-    'LKB'
+    'LKB',
+    'MRS'
   ],
   body: (
     <>
       <p>
-        Description coming soon
+        This project was part of a course on <a href="http://courses.washington.edu/ling567/" target="_blank" rel="noopener noreferrer">Knowledge Engineering for NLP</a>, taught by <a href="http://faculty.washington.edu/ebender/" target="_blank" rel="noopener noreferrer">Emily Bender</a>. Along with <a href="https://www.linkedin.com/in/dwennermarko/" target="_blank" rel="noopener noreferrer">Drew Owens</a>, I engineered a grammar for <a href="https://glottolog.org/resource/languoid/id/sout2789" target="_blank" rel="noopener noreferrer">Dagaare</a>, a Niger-Congo language spoken in Ghana. Despite being primarily a linguistics course, there were a lot of programming concepts involved: in particular, we effectively used a form of <a href="https://en.wikipedia.org/wiki/Test-driven_development" target="_blank" rel="noopener noreferrer">Test-Driven Development</a>, via <code>[incr tsdb()]</code>, to guide our progress.
+      </p>
+
+      <p className="pt-6">
+        An advantage to using HPSG and MRS, like we did, is that sentences can be translated directly between grammars with a very high degree of accuracy. The culmination of this course was a day where the class wired our various grammars together, along with a <a href="http://www.delph-in.net/erg/" target="_blank" rel="noopener noreferrer">grammar for English</a>, to translate sentences between the languages we'd studied.
       </p>
     </>
   )

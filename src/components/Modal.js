@@ -28,7 +28,8 @@ const tagLinks = {
   'JavaScript': 'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
   'BEM': 'http://getbem.com/',
   'JPype': 'https://jpype.readthedocs.io/en/latest/',
-  'BeautifulSoup': 'https://www.crummy.com/software/BeautifulSoup/bs4/doc/'
+  'BeautifulSoup': 'https://www.crummy.com/software/BeautifulSoup/bs4/doc/',
+  'MRS': 'https://en.wikipedia.org/wiki/Minimal_recursion_semantics'
 };
 
 const headerStyles = {
