@@ -261,10 +261,10 @@ export default [
   alglang,
   countdown,
   streamlined,
+  bettyBot,
+  portfolio,
   pixels,
-  showdown,
   dagaare,
   neam,
-  portfolio,
-  bettyBot
+  showdown
 ];
