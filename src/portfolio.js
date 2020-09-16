@@ -113,7 +113,11 @@ const pixels = {
   body: (
     <>
       <p>
-        Description coming soon
+        This application was designed to expand on a simple <a href="https://docs.google.com/document/d/1S__G3fasIgUhkeCkbC91TXHmhOF_MgwdKarz80bsvFE/edit" target="_blank" rel="noopener noreferrer">unplugged activity</a> by <a href="https://canadaleraningcode.ca" target="_blank" rel="noopener noreferrer">Canada Learning Code</a>. I was concerned that the unplugged version was too trivial: it presented very little challenge, and didn't result in a shareable final product. <code>Pixel drawing</code> builds the same learning outcomes (sequence, loops) into an interactive platform: using a simple domain-specific language (DSL), users can practice basic coding concepts to produce artwork. (Old video game characters, as well as Minecraft characters, work particularly well in this medium.)
+      </p>
+
+      <p className="pt-6">
+        In addition to effectively writing a simple programming language interpreter for this project, I also played around with JavaScript's <code>localStorage</code> to save pieces. Overall, this project was a lot of fun to make, and I keep meaning to go back to it to polish it up a little more.
       </p>
     </>
   )
