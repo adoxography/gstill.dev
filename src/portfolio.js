@@ -77,6 +77,7 @@ const streamlined = {
   description: 'My master\'s project, classifying genre of spoken audio samples',
   technologies: [
     'Python',
+    'SVM',
     'openSMILE',
     'openXBOW',
     'scikit-learn'
@@ -84,7 +85,11 @@ const streamlined = {
   body: (
     <>
       <p>
-        Description coming soon
+        This was my master's project in the CLMS program at the University of Washington, supervised by <a href="https://faculty.washington.edu/levow/" target="_blank" rel="noopener noreferrer">Gina-Anne Levow</a>. The goal was to classify audio samples of speech by genre; for example, as a discussion, a prayer, a folktale, etc. It was specifically designed for so-called <strong>low resource languages</strong>&mdash;that is, languages which do not have much available data to train popular learning models like neural networks.
+      </p>
+
+      <p className="mt-6">
+        I used <code>openSMILE</code> to extract low-level features from the audio samples, and then compiled them into bags of audio words using <code>openXBOW</code>. Since neural networks are traditionally very poor at handling low-resource languages, I chose to use a support vector machine (SVM) as my classifier. I also investigated the feasibility of data augmentation, which involved writing a custom frequency filter to mask random frequencies out of the training data.
       </p>
     </>
   )
