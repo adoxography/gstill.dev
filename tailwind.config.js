@@ -45,6 +45,7 @@ module.exports = {
     },
   },
   variants: {
+    backgroundColor: ['responsive', 'hover', 'focus', 'disabled'],
     margin: ['responsive', 'first', 'hover', 'focus'],
     position: ['responsive', 'hover', 'focus', 'group-hover', 'group-focus'],
     display: ['responsive', 'hover', 'focus', 'group-hover', 'group-focus'],

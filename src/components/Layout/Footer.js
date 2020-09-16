@@ -1,4 +1,5 @@
 import React from 'react';
+import ContactForm from '../ContactForm';
 
 const SocialLink = ({ name,  href, cls }) => (
   <a href={href} target="_blank" rel="noopener noreferrer" className="p-2" aria-label="name">
@@ -7,12 +8,14 @@ const SocialLink = ({ name,  href, cls }) => (
 );
 
 const Footer = () => (
-  <footer className="bg-gray-900 text-center py-10 text-2xl">
-    <a href="mailto:graham@gstill.dev" className="font-semibold">
-      graham@gstill.dev
-    </a>
+  <footer id="footer" className="bg-gray-900 text-center pt-20 pb-10">
+    <p className="text-xl mb-8 text-gray-300">
+      Want to get ahold of me? Send me a message!
+    </p>
 
-    <ul className="flex justify-center mt-8">
+    <ContactForm />
+
+    <ul className="flex justify-center mt-16 text-2xl">
       <li className="mx-2">
         <SocialLink
           name="Github"

@@ -22,6 +22,7 @@ const NavList = ({ open, onNavigate }) => (
       <li><NavLink href="#services" onClick={onNavigate} hidden={!open}>My services</NavLink></li>
       <li><NavLink href="#about" onClick={onNavigate} hidden={!open}>About me</NavLink></li>
       <li><NavLink href="#work" onClick={onNavigate} hidden={!open}>My work</NavLink></li>
+      <li><NavLink href="#footer" onClick={onNavigate} hidden={!open}>Contact me</NavLink></li>
     </ul>
   </nav>
 );
