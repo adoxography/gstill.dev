@@ -55,8 +55,13 @@ const About = () => {
       </p>
 
       <div className="leading-relaxed" style={{ 'gridArea': 'text' }}>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        <p className="mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <p>
+          I'm a combination between a university-taught and a self-taught coder; I picked up a lot of theory while in university, and I've devoted countless hours to improving my skills since. I enjoy making tools that improve quality of life, whether that be my own or someone else's. I'm also deeply invested in training others to be literate about the technology that surrounds us, at a level that's approachable from their current state of understanding.
+        </p>
+
+        <p className="mt-4">
+          When I'm not coding (which, honestly, pretty unusual), I enjoy watching movies about time travel, practicing card magic, and writing with fountain pens.
+        </p>
       </div>
 
       <img
