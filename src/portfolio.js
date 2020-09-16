@@ -35,7 +35,7 @@ const alglang = {
       </p>
 
       <p className="mt-6">
-        This was my first full-stack web application, and I learned a lot about web development in general through the process of making it. It is written primarily in PHP (using Laravel as a framework), and uses Vue.js to provide client-side interactivity. It includes an interface to allow contributors to add more entries to the database without having to deal directly with the database. I'm currently in the process of overhauling the entire website with the benefit of more experience in developing and desigigning applications.
+        This was my first full-stack web application, and I learned a lot about web development in general through the process of making it. It is written primarily in PHP (using Laravel as a framework), and uses Vue.js to provide client-side interactivity. It includes an interface to allow contributors to add more entries to the database without having to deal directly with the database. I'm currently in the process of overhauling the entire website with the benefit of more experience in developing and designing applications.
       </p>
     </>
   )
