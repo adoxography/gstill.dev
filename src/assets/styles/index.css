@@ -1,9 +1,5 @@
 @tailwind base;
 
-html {
-  scroll-behavior: smooth;
-}
-
 :focus,
 button:focus {
   outline: 3px solid #5a67d8;
