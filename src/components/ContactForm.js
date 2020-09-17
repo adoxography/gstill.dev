@@ -48,7 +48,7 @@ const Contact = () => {
   return (
     <form
       acceptCharset="UTF-8"
-      className="max-w-screen-sm mx-auto text-xl"
+      className="max-w-screen-sm mx-auto px-4 text-xl"
       onSubmit={handleSubmit}
     >
       <div className="text-left">
