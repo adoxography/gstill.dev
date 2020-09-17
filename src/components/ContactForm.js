@@ -32,6 +32,7 @@ const Contact = () => {
 
   const handleSubmit = async evt => {
     evt.preventDefault();
+    evt.persist();
     setSending(true);
 
     try {
@@ -39,6 +40,7 @@ const Contact = () => {
       evt.target.reset();
       setMessage(successMessage);
     } catch (error) {
+      console.error(error);
       setMessage(errorMessage);
     } finally {
       setSending(false);
