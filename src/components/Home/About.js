@@ -60,7 +60,7 @@ const About = () => {
         </p>
 
         <p className="mt-4">
-          When I'm not coding (which, honestly, pretty unusual), I enjoy watching movies about time travel, practicing card magic, and writing with fountain pens.
+          When I'm not coding (which, honestly, is pretty unusual), I enjoy watching movies about time travel, practicing card magic, and writing with fountain pens.
         </p>
       </div>
 
