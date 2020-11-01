@@ -16,8 +16,8 @@ module.exports = {
         114: '36rem'
       },
       width: {
-        'min': 'min-content',
-        'fit': 'fit-content',
+        min: 'min-content',
+        fit: 'fit-content',
         'full-plus-6': 'calc(100% + 1.5rem)',
         'full-plus-8': 'calc(100% + 2rem)'
       },
@@ -42,7 +42,7 @@ module.exports = {
       zIndex: {
         '-10': '-10'
       }
-    },
+    }
   },
   variants: {
     backgroundColor: ['responsive', 'hover', 'focus', 'disabled'],
@@ -59,4 +59,4 @@ module.exports = {
     purgeLayersByDefault: true,
     removeDeprecatedGapUtilities: true
   }
-}
+};
