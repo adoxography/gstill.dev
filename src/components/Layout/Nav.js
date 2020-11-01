@@ -1,7 +1,14 @@
 import React, { useState } from 'react';
+import PropTypes from 'prop-types';
+
 import Logo from '../Logo';
 
-const NavLink = ({ href, children, onClick, hidden }) => (
+const NavLink = ({
+  href,
+  children,
+  onClick,
+  hidden
+}) => (
   <a
     className="font-bold text-4xl text-gray-100 md:text-5xl"
     href={href}
@@ -12,6 +19,18 @@ const NavLink = ({ href, children, onClick, hidden }) => (
     {children}
   </a>
 );
+
+NavLink.defaultProps = {
+  onClick: () => {},
+  hidden: false
+};
+
+NavLink.propTypes = {
+  href: PropTypes.string.isRequired,
+  children: PropTypes.element.isRequired,
+  onClick: PropTypes.func,
+  hidden: PropTypes.bool
+};
 
 const NavList = ({ open, onNavigate }) => (
   <nav
@@ -26,6 +45,16 @@ const NavList = ({ open, onNavigate }) => (
     </ul>
   </nav>
 );
+
+NavList.defaultProps = {
+  open: false,
+  onNavigate: () => {}
+};
+
+NavList.propTypes = {
+  open: PropTypes.bool,
+  onNavigate: PropTypes.func
+};
 
 const Nav = ({ isHidden, transparent }) => {
   const [navOpen, setNavOpen] = useState(false);
@@ -44,6 +73,7 @@ const Nav = ({ isHidden, transparent }) => {
         className={`p-2 z-50 ${navOpen ? 'nav-open' : ''}`}
         aria-label="toggle navigation"
         onClick={toggleNav}
+        type="button"
       >
         <span className="hamburger" />
       </button>
@@ -51,6 +81,16 @@ const Nav = ({ isHidden, transparent }) => {
       <NavList open={navOpen} onNavigate={handleNavigate} />
     </header>
   );
+};
+
+Nav.defaultProps = {
+  isHidden: false,
+  transparent: false
+};
+
+Nav.propTypes = {
+  isHidden: PropTypes.bool,
+  transparent: PropTypes.bool
 };
 
 export default Nav;

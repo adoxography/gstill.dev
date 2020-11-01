@@ -38,11 +38,11 @@ const About = () => {
       id="about"
       ref={ref}
       className="max-w-screen-lg mx-auto py-20 px-8 md:grid gap-x-8"
-      style={{ 'gridTemplateColumns': '1fr 200px', 'gridTemplateAreas': '"title img" "subtitle img" "text img"' }}
+      style={{ gridTemplateColumns: '1fr 200px', gridTemplateAreas: '"title img" "subtitle img" "text img"' }}
     >
       <h2
         className="text-4xl mb-2 font-semibold font-display"
-        style={{ 'gridArea': 'title' }}
+        style={{ gridArea: 'title' }}
       >
         Who I am
       </h2>
@@ -54,13 +54,19 @@ const About = () => {
         Computational linguist in Winnipeg
       </p>
 
-      <div className="leading-relaxed" style={{ 'gridArea': 'text' }}>
+      <div className="leading-relaxed" style={{ gridArea: 'text' }}>
         <p>
-          I'm a combination between a university-taught and a self-taught coder; I picked up a lot of theory while in university, and I've devoted countless hours to improving my skills since. I enjoy making tools that improve quality of life, whether that be my own or someone else's. I'm also deeply invested in training others to be literate about the technology that surrounds us, at a level that's approachable from their current state of understanding.
+          I&apos;m a combination between a university-taught and a self-taught coder; I picked up a
+          lot of theory while in university, and I&apos;ve devoted countless hours to improving my
+          skills since. I enjoy making tools that improve quality of life, whether that be my own
+          or someone else&apos;s. I&apos;m also deeply invested in training others to be literate
+          about the technology that surrounds us, at a level that&apos;s approachable from their
+          current state of understanding.
         </p>
 
         <p className="mt-4">
-          When I'm not coding (which, honestly, is pretty unusual), I enjoy watching movies about time travel, practicing card magic, and writing with fountain pens.
+          When I&apos;m not coding (which, honestly, is pretty unusual), I enjoy watching movies
+          about time travel, practicing card magic, and writing with fountain pens.
         </p>
       </div>
 

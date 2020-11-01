@@ -1,36 +1,37 @@
 import React, { useEffect, useRef, useState } from 'react';
+import PropTypes from 'prop-types';
 
 import Button from './Button';
 
 const tagLinks = {
-  'Laravel': 'https://laravel.com',
-  'PHP': 'https://php.net',
-  'Python': 'https://python.org',
+  Laravel: 'https://laravel.com',
+  PHP: 'https://php.net',
+  Python: 'https://python.org',
   'Vue.js': 'https://vuejs.org',
-  'React': 'https://reacjs.org',
+  React: 'https://reacjs.org',
   'Alpine.js': 'https://github.com/alpinejs/alpine',
-  'Tailwind': 'https://tailwindcss.com',
-  'Electron': 'https://electronjs.org',
-  'openSMILE': 'https://www.audeering.com/opensmile/',
-  'openXBOW': 'https://github.com/openXBOW/openXBOW',
+  Tailwind: 'https://tailwindcss.com',
+  Electron: 'https://electronjs.org',
+  openSMILE: 'https://www.audeering.com/opensmile/',
+  openXBOW: 'https://github.com/openXBOW/openXBOW',
   'scikit-learn': 'https://scikit-learn.org/',
-  'Bulma': 'https://bulma.io',
+  Bulma: 'https://bulma.io',
   'Stanford Parser': 'https://nlp.stanford.edu/software/lex-parser.shtml',
-  'Wikidata': 'https://www.wikidata.org/',
-  'LKB': 'http://moin.delph-in.net/LkbTop',
+  Wikidata: 'https://www.wikidata.org/',
+  LKB: 'http://moin.delph-in.net/LkbTop',
   '[incr tsdb()]': 'http://www.delph-in.net/itsdb/',
   'LinGo Grammar Matrix': 'http://matrix.ling.washington.edu/index.html',
-  'HPSG': 'https://en.wikipedia.org/wiki/Head-driven_phrase_structure_grammar',
-  'Java': 'https://java.com',
+  HPSG: 'https://en.wikipedia.org/wiki/Head-driven_phrase_structure_grammar',
+  Java: 'https://java.com',
   'Express.js': 'https://expressjs.com',
-  'HTML': 'https://developer.mozilla.org/en-US/docs/Web/HTML',
-  'CSS': 'https://developer.mozilla.org/en-US/docs/Web/CSS',
-  'JavaScript': 'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
-  'BEM': 'http://getbem.com/',
-  'JPype': 'https://jpype.readthedocs.io/en/latest/',
-  'BeautifulSoup': 'https://www.crummy.com/software/BeautifulSoup/bs4/doc/',
-  'MRS': 'https://en.wikipedia.org/wiki/Minimal_recursion_semantics',
-  'SVM': 'https://en.wikipedia.org/wiki/Support_vector_machine'
+  HTML: 'https://developer.mozilla.org/en-US/docs/Web/HTML',
+  CSS: 'https://developer.mozilla.org/en-US/docs/Web/CSS',
+  JavaScript: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
+  BEM: 'http://getbem.com/',
+  JPype: 'https://jpype.readthedocs.io/en/latest/',
+  BeautifulSoup: 'https://www.crummy.com/software/BeautifulSoup/bs4/doc/',
+  MRS: 'https://en.wikipedia.org/wiki/Minimal_recursion_semantics',
+  SVM: 'https://en.wikipedia.org/wiki/Support_vector_machine'
 };
 
 const headerStyles = {
@@ -50,7 +51,7 @@ const imageStyles = {
 };
 
 const TechnologyTag = ({ name }) => {
-  if (tagLinks.hasOwnProperty(name)) {
+  if ({}.hasOwnProperty.call(tagLinks, name)) {
     return (
       <a
         className="block m-1 px-3 py-1 bg-indigo-200 text-gray-900 rounded-full"
@@ -60,7 +61,7 @@ const TechnologyTag = ({ name }) => {
       >
         {name}
       </a>
-    )
+    );
   }
 
   return (
@@ -70,11 +71,15 @@ const TechnologyTag = ({ name }) => {
   );
 };
 
-const ShowMore = () => (
-  <div class="absolute flex w-full bottom-0 justify-center mb-8">
+TechnologyTag.propTypes = {
+  name: PropTypes.string.isRequired
+};
 
-    <svg class="animate-bounce w-8 h-8 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+const ShowMore = () => (
+  <div className="absolute flex w-full bottom-0 justify-center mb-8">
+
+    <svg className="animate-bounce w-8 h-8 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
     </svg>
   </div>
 );
@@ -83,7 +88,9 @@ const ButtonPanel = ({ links, onIntersectChange }) => {
   const ref = useRef();
 
   useEffect(() => {
-    const observer = new IntersectionObserver(([entry]) => onIntersectChange(!entry.isIntersecting));
+    const observer = new IntersectionObserver(([entry]) => {
+      onIntersectChange(!entry.isIntersecting);
+    });
 
     if (ref.current) {
       observer.observe(ref.current);
@@ -116,12 +123,30 @@ const ButtonPanel = ({ links, onIntersectChange }) => {
         </Button>
       )}
     </div>
-  )
+  );
+};
+
+ButtonPanel.defaultProps = {
+  onIntersectChange: () => {}
+};
+
+ButtonPanel.propTypes = {
+  onIntersectChange: PropTypes.func,
+  links: PropTypes.shape({
+    visit: PropTypes.string,
+    source: PropTypes.string
+  }).isRequired
 };
 
 const Modal = ({ hide, value, isOpen }) => {
   const [hasMoreContent, setHasMoreContent] = useState(false);
-  const { imgSrc, links, title, technologies, body } = value;
+  const {
+    imgSrc,
+    links,
+    title,
+    technologies,
+    body
+  } = value;
   let mainLink = '#';
 
   if (links) {
@@ -155,6 +180,7 @@ const Modal = ({ hide, value, isOpen }) => {
       aria-hidden={!isOpen}
     >
       <div
+        aria-hidden="true"
         className="bg-gray-900 bg-opacity-75 absolute top-0 right-0 bottom-0 left-0"
         onClick={hide}
       />
@@ -165,6 +191,7 @@ const Modal = ({ hide, value, isOpen }) => {
         aria-labelledby="modal-title"
       >
         <button
+          type="button"
           className="absolute top-0 right-0 m-4 text-xl px-2 z-50"
           onClick={hide}
           ref={closeRef}
@@ -187,7 +214,7 @@ const Modal = ({ hide, value, isOpen }) => {
               style={imageStyles}
               alt={`${title} logo`}
             />
-            
+
             <p
               className="font-display text-3xl lg:text-4xl md:self-start relative md:-left-6 md:w-full-plus-6 md:mt-12 md:pr-6 bg-indigo-600 md:pl-72 shadow text-center md:text-left"
               style={titleStyles}
@@ -223,6 +250,26 @@ const Modal = ({ hide, value, isOpen }) => {
       </div>
     </div>
   );
+};
+
+Modal.defaultProps = {
+  hide: () => {},
+  isOpen: false
+};
+
+Modal.propTypes = {
+  hide: PropTypes.func,
+  isOpen: PropTypes.bool,
+  value: PropTypes.shape({
+    imgSrc: PropTypes.string,
+    title: PropTypes.string,
+    body: PropTypes.string,
+    technologies: PropTypes.arrayOf(PropTypes.string),
+    links: PropTypes.shape({
+      visit: PropTypes.string,
+      source: PropTypes.string
+    })
+  }).isRequired
 };
 
 export default Modal;

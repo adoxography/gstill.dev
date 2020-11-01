@@ -1,15 +1,13 @@
 import React, { useState } from 'react';
 
-const url = 'https://formcarry.com/s/s8LKiVs3g3xJ';
+const FORMCARRY_URL = 'https://formcarry.com/s/s8LKiVs3g3xJ';
 const successMessage = 'Thanks! I\'ll get back to you as soon as I can!';
 const errorMessage = 'Uh oh...looks like something went wrong. Maybe try contacting me on social media?';
 
 const extractFormData = form => {
   const data = new URLSearchParams();
 
-  for (const [key, value] of new FormData(form)) {
-    data.append(key, value);
-  }
+  Array.of(...new FormData(form)).forEach(([key, value]) => data.append(key, value));
 
   return data;
 };
@@ -36,11 +34,10 @@ const Contact = () => {
     setSending(true);
 
     try {
-      await sendEmail(url, extractFormData(evt.target));
+      await sendEmail(FORMCARRY_URL, extractFormData(evt.target));
       evt.target.reset();
       setMessage(successMessage);
     } catch (error) {
-      console.error(error);
       setMessage(errorMessage);
     } finally {
       setSending(false);
@@ -59,15 +56,16 @@ const Contact = () => {
           className="text-xs uppercase tracking-wide text-gray-400"
         >
           Your email
+
+          <input
+            id="email"
+            type="email"
+            name="email"
+            disabled={sending}
+            required
+            className="block w-full p-2 text-gray-900 bg-gray-200 shadow-inner disabled:bg-gray-500"
+          />
         </label>
-        <input
-          id="email"
-          type="email"
-          name="email"
-          disabled={sending}
-          required
-          className="block w-full p-2 text-gray-900 bg-gray-200 shadow-inner disabled:bg-gray-500"
-        />
       </div>
 
       <div className="text-left mt-4">
@@ -76,14 +74,15 @@ const Contact = () => {
           className="text-xs uppercase tracking-wide text-gray-400"
         >
           Your message
+
+          <textarea
+            id="contact-message"
+            name="message"
+            disabled={sending}
+            required
+            className="block w-full p-2 text-gray-900 h-40 bg-gray-200 shadow-inner disabled:bg-gray-500"
+          />
         </label>
-        <textarea
-          id="contact-message"
-          name="message"
-          disabled={sending}
-          required
-          className="block w-full p-2 text-gray-900 h-40 bg-gray-200 shadow-inner disabled:bg-gray-500"
-        ></textarea>
       </div>
 
       <input
@@ -107,9 +106,12 @@ const Contact = () => {
           type="submit"
         >
           {sending
-            ? <svg className="animate-spin fill-current w-8 h-8" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 16 16"><path d="M3 8c0-.19.011-.378.032-.563l-2.89-.939A8.085 8.085 0 00.001 8c0 2.3.971 4.374 2.526 5.833l1.786-2.458A4.982 4.982 0 013.001 8zm10 0a4.978 4.978 0 01-1.312 3.375l1.786 2.458A7.975 7.975 0 0016 8c0-.513-.049-1.015-.141-1.502l-2.89.939c.021.185.032.373.032.563zM9 3.1a5.01 5.01 0 013.351 2.435l2.89-.939A8.01 8.01 0 009 .062V3.1zM3.649 5.535A5.007 5.007 0 017 3.1V.062A8.005 8.005 0 00.759 4.596l2.89.939zm6.422 7.017C9.44 12.84 8.739 13 8 13s-1.44-.16-2.071-.448L4.143 15.01C5.287 15.641 6.601 16 8 16s2.713-.359 3.857-.99l-1.786-2.458z"/><path fill="rgba(0, 0, 0, 0)" d="M0 0h16v16H0z"/></svg>
-            : 'Send'
-          }
+            ? (
+              <svg className="animate-spin fill-current w-8 h-8" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 16 16">
+                <path d="M3 8c0-.19.011-.378.032-.563l-2.89-.939A8.085 8.085 0 00.001 8c0 2.3.971 4.374 2.526 5.833l1.786-2.458A4.982 4.982 0 013.001 8zm10 0a4.978 4.978 0 01-1.312 3.375l1.786 2.458A7.975 7.975 0 0016 8c0-.513-.049-1.015-.141-1.502l-2.89.939c.021.185.032.373.032.563zM9 3.1a5.01 5.01 0 013.351 2.435l2.89-.939A8.01 8.01 0 009 .062V3.1zM3.649 5.535A5.007 5.007 0 017 3.1V.062A8.005 8.005 0 00.759 4.596l2.89.939zm6.422 7.017C9.44 12.84 8.739 13 8 13s-1.44-.16-2.071-.448L4.143 15.01C5.287 15.641 6.601 16 8 16s2.713-.359 3.857-.99l-1.786-2.458z" />
+                <path fill="rgba(0, 0, 0, 0)" d="M0 0h16v16H0z" />
+              </svg>
+            ) : 'Send'}
         </button>
       </div>
     </form>

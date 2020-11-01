@@ -1,11 +1,19 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+
 import ContactForm from '../ContactForm';
 
-const SocialLink = ({ name,  href, cls }) => (
-  <a href={href} target="_blank" rel="noopener noreferrer" className="p-2" aria-label="name">
-    <i className={`fab ${cls}`}></i>
+const SocialLink = ({ name, href, cls }) => (
+  <a href={href} target="_blank" rel="noopener noreferrer" className="p-2" aria-label={name}>
+    <i className={`fab ${cls}`} />
   </a>
 );
+
+SocialLink.propTypes = {
+  name: PropTypes.string.isRequired,
+  href: PropTypes.string.isRequired,
+  cls: PropTypes.string.isRequired
+};
 
 const Footer = () => (
   <footer id="footer" className="bg-gray-900 text-center pt-20 pb-10">

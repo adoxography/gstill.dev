@@ -1,9 +1,11 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+
 import items from '../../portfolio';
 
 const portfolioStyles = {
   gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))'
-}
+};
 
 const PortfolioItem = ({ value, onClick }) => {
   const { imgSrc, title, description } = value;
@@ -13,6 +15,7 @@ const PortfolioItem = ({ value, onClick }) => {
   return (
     <div className="bg-indigo-600 overflow-hidden relative">
       <button
+        type="button"
         className="contents group focus:z-10 cursor-pointer"
         onClick={handleClick}
       >
@@ -38,6 +41,19 @@ const PortfolioItem = ({ value, onClick }) => {
   );
 };
 
+PortfolioItem.defaultProps = {
+  onClick: () => {}
+};
+
+PortfolioItem.propTypes = {
+  onClick: PropTypes.func,
+  value: PropTypes.shape({
+    imgSrc: PropTypes.string,
+    title: PropTypes.string,
+    description: PropTypes.string
+  }).isRequired
+};
+
 const Portfolio = ({ openModal }) => {
   const handleClick = state => {
     openModal(state);
@@ -47,11 +63,11 @@ const Portfolio = ({ openModal }) => {
     <section id="work" className="bg-gray-400 text-gray-800 text-center py-20 px-8">
       <header className="font-display font-semibold">
         <h2 className="text-4xl">
-            My work
+          My work
         </h2>
 
         <p className="text-2xl text-indigo-600 mb-8">
-          Some projects I've developed
+          Some projects I&apos;ve developed
         </p>
       </header>
 
@@ -63,6 +79,10 @@ const Portfolio = ({ openModal }) => {
       </div>
     </section>
   );
+};
+
+Portfolio.propTypes = {
+  openModal: PropTypes.func.isRequired
 };
 
 export default Portfolio;

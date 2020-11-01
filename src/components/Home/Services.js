@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const Service = ({ title, children }) => (
   <div className="max-w-screen-sm my-0 mx-auto md:ml-8 mt-6 md:mt-0 first:ml-0">
@@ -8,6 +9,11 @@ const Service = ({ title, children }) => (
     </p>
   </div>
 );
+
+Service.propTypes = {
+  title: PropTypes.string.isRequired,
+  children: PropTypes.element.isRequired
+};
 
 const Services = () => (
   <section className="bg-image-water py-20 px-8 bg-gray-300 text-gray-800 text-center bg-cover" id="services">
@@ -19,15 +25,21 @@ const Services = () => (
 
     <div className="mb-16 md:flex max-w-screen-lg mx-auto">
       <Service title="Development">
-        I develop applications that incorporate natural language processing, as well as general full-stack web applications. My preferred languages are Ruby and Python, but I'm comfortable working in a variety of others.
+        I develop applications that incorporate natural language processing, as well as general
+        full-stack web applications. My preferred languages are Ruby and Python, but I&apos;m
+        comfortable working in a variety of others.
       </Service>
 
       <Service title="Education">
-        I've taught all ages, from kindergarten to seniors, about coding, computational thinking, and digital literacy. I've taught in-person in regions across Canada, including Manitoba, Ontario, and Nunavut, as well as in online settings.
+        I&apos;ve taught all ages, from kindergarten to seniors, about coding, computational
+        thinking, and digital literacy. I&apos;ve taught in-person in regions across Canada,
+        including Manitoba, Ontario, and Nunavut, as well as in online settings.
       </Service>
 
       <Service title="Linguistics">
-        I have a lifelong fascination with language. I've conducted research looking at Kapampangan, Dagaare, and the Algonquian family, with particular emphasis on syntax, phonology, and historical linguistics.
+        I have a lifelong fascination with language. I&apos;ve conducted research looking at
+        Kapampangan, Dagaare, and the Algonquian family, with particular emphasis on syntax,
+        phonology, and historical linguistics.
       </Service>
     </div>
 
