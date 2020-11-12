@@ -27,7 +27,7 @@ NavLink.defaultProps = {
 
 NavLink.propTypes = {
   href: PropTypes.string.isRequired,
-  children: PropTypes.element.isRequired,
+  children: PropTypes.node.isRequired,
   onClick: PropTypes.func,
   hidden: PropTypes.bool
 };

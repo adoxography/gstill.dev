@@ -127,7 +127,8 @@ const ButtonPanel = ({ links, onIntersectChange }) => {
 };
 
 ButtonPanel.defaultProps = {
-  onIntersectChange: () => {}
+  onIntersectChange: () => {},
+  links: {}
 };
 
 ButtonPanel.propTypes = {
@@ -135,7 +136,7 @@ ButtonPanel.propTypes = {
   links: PropTypes.shape({
     visit: PropTypes.string,
     source: PropTypes.string
-  }).isRequired
+  })
 };
 
 const Modal = ({ hide, value, isOpen }) => {
@@ -263,7 +264,7 @@ Modal.propTypes = {
   value: PropTypes.shape({
     imgSrc: PropTypes.string,
     title: PropTypes.string,
-    body: PropTypes.string,
+    body: PropTypes.node,
     technologies: PropTypes.arrayOf(PropTypes.string),
     links: PropTypes.shape({
       visit: PropTypes.string,

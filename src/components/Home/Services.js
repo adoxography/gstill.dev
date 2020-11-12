@@ -12,7 +12,7 @@ const Service = ({ title, children }) => (
 
 Service.propTypes = {
   title: PropTypes.string.isRequired,
-  children: PropTypes.element.isRequired
+  children: PropTypes.node.isRequired
 };
 
 const Services = () => (
