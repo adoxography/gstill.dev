@@ -27,11 +27,10 @@ const alglang = {
   body: (
     <>
       <p>
-        I started developing the Database of Algonquian Language Structures (a.k.a.
-        <strong>alglang.net</strong>
-        ) with
-        <a href="https://home.cc.umanitoba.ca/~oxfordwr/" target="_blank" rel="noopener noreferrer">Dr. Will Oxford</a>
-        during the last year of my undergraduate degree at the University of Manitoba. Research on
+        I started developing the Database of Algonquian Language Structures
+        (a.k.a. <strong>alglang.net</strong>)
+        with <a href="https://home.cc.umanitoba.ca/~oxfordwr/" target="_blank" rel="noopener noreferrer">Dr. Will Oxford</a> during
+        the last year of my undergraduate degree at the University of Manitoba. Research on
         Algonquian linguistics &mdash; that is, the study of the largest language family native to
         North America &mdash; is notoriously difficult to access, even for linguists. Much of the
         existing research is tucked away in printed sources in obscure libraries, and written in
@@ -42,14 +41,10 @@ const alglang = {
 
       <p className="mt-6">
         A big part of the project was organizing the data about Algonquian linguistics in such a
-        way that it could be stored in a
-        <strong>relational database</strong>
-        (a topic about which
-        I presented along with Will Oxford at the 49
-        <sup>th</sup>
-        Algonquian Conference). The schema I developed fits the Algonquian family very well, but I
-        believe it to be flexible enough to accomodate many other language families with minimal
-        changes.
+        way that it could be stored in a <strong>relational database</strong> (a topic about which
+        I presented along with Will Oxford at the 49<sup>th</sup> Algonquian Conference). The
+        schema I developed fits the Algonquian family very well, but I believe it to be flexible
+        enough to accomodate many other language families with minimal changes.
       </p>
 
       <p className="mt-6">
@@ -86,8 +81,8 @@ const countdown = {
         work periods. All of the existing timer apps I tried either wouldn&apos;t work alongside a
         fullscreen app in MacOS, or were chained to the top of the screen &mdash; either making
         them too small to be readable, or blocking important information in that region of the
-        screen. Being an avid user of &quot;floating&quot; MacOS apps like
-        <a href="https://www.alfredapp.com/" target="_blank" rel="noopener noreferrer">Alfred</a>
+        screen. Being an avid user of &quot;floating&quot; MacOS apps
+        like <a href="https://www.alfredapp.com/" target="_blank" rel="noopener noreferrer">Alfred</a>
         , I knew there had to be a way to achieve the sort of experience I was looking for.
       </p>
 
@@ -95,10 +90,8 @@ const countdown = {
         Objectively, the best implementation for this kind of app would be a native Swift app, but
         I since I don&apos;t know Swift and didn&apos;t have the time to go about learning it, I
         chose to write the app in React and embed it in Electron. It turns out that Electron has a
-        convenient
-        <code>setVisibleOnAllWorkspaces</code>
-        method which, along with a hanful of other required settings, enable an app to float over
-        full screen apps!
+        convenient <code>setVisibleOnAllWorkspaces</code> method which, along with a hanful of
+        other required settings, enable an app to float over full screen apps!
       </p>
     </>
   )
@@ -122,25 +115,20 @@ const streamlined = {
     <>
       <p>
         This was my master&apos;s project in the CLMS program at the University of Washington,
-        supervised by
-        <a href="https://faculty.washington.edu/levow/" target="_blank" rel="noopener noreferrer">Gina-Anne Levow</a>
+        supervised by <a href="https://faculty.washington.edu/levow/" target="_blank" rel="noopener noreferrer">Gina-Anne Levow</a>
         . The goal was to classify audio samples of speech by genre; for example, as a discussion,
-        a prayer, a folktale, etc. It was specifically designed for so-called
-        <strong>low resource languages</strong>
-        &mdash;that is, languages which do not have much available data to train popular learning
-        models like neural networks.
+        a prayer, a folktale, etc. It was specifically designed for
+        so-called <strong>low resource languages</strong>&mdash;that is, languages which do not
+        have much available data to train popular learning models like neural networks.
       </p>
 
       <p className="mt-6">
-        I used
-        <code>openSMILE</code>
-        to extract low-level features from the audio samples, and then compiled them into bags of
-        audio words using
-        <code>openXBOW</code>
-        . Since neural networks are traditionally very poor at handling low-resource languages, I
-        chose to use a support vector machine (SVM) as my classifier. I also investigated the
-        feasibility of data augmentation, which involved writing a custom frequency filter to mask
-        random frequencies out of the training data.
+        I used <code>openSMILE</code> to extract low-level features from the audio samples, and then
+        compiled them into bags of audio words using <code>openXBOW</code>. Since neural networks
+        are typically very poor at handling low-resource languages, I chose to use a support
+        vector machine (SVM) as my classifier. I also investigated the feasibility of data
+        augmentation, which involved writing a custom frequency filter to mask random frequencies
+        out of the training data.
       </p>
     </>
   )
@@ -164,24 +152,18 @@ const pixels = {
   body: (
     <>
       <p>
-        This application was designed to expand on a simple
-        <a href="https://docs.google.com/document/d/1S__G3fasIgUhkeCkbC91TXHmhOF_MgwdKarz80bsvFE/edit" target="_blank" rel="noopener noreferrer">unplugged activity</a>
-        by
-        <a href="https://canadaleraningcode.ca" target="_blank" rel="noopener noreferrer">Canada Learning Code</a>
-        . I was concerned that the unplugged version was too trivial: it presented very little
-        challenge, and didn&apos;t result in a shareable final product.
-        <code>Pixel drawing</code>
-        builds the same learning outcomes (sequence, loops) into an interactive platform: using a
-        simple domain-specific language (DSL), users can practice basic coding concepts to produce
-        artwork. (Old video game characters, as well as Minecraft characters, work particularly
-        well in this medium.)
+        This application was designed to expand on a simple <a href="https://docs.google.com/document/d/1S__G3fasIgUhkeCkbC91TXHmhOF_MgwdKarz80bsvFE/edit" target="_blank" rel="noopener noreferrer">unplugged activity</a> by <a href="https://canadaleraningcode.ca" target="_blank" rel="noopener noreferrer">Canada Learning Code</a>. I was concerned that the unplugged version was too trivial: it presented very little
+        challenge, and didn&apos;t result in a shareable final
+        product. <strong>Pixel drawing</strong> builds the same learning outcomes (sequence, loops)
+        into an interactive platform: using a simple domain-specific language (DSL), users can
+        practice basic coding concepts to produce artwork. (Old video game characters, as well as
+        Minecraft characters, work particularly well in this medium.)
       </p>
 
       <p className="pt-6">
         In addition to effectively writing a simple programming language interpreter for this
-        project, I also played around with JavaScript&apos;s
-        <code>localStorage</code>
-        to save pieces. Overall, this project was a lot of fun to make, and I keep meaning to go
+        project, I also played around with JavaScript&apos;s <code>localStorage</code> to
+        save pieces. Overall, this project was a lot of fun to make, and I keep meaning to go
         back to it to polish it up a little more.
       </p>
     </>
@@ -232,29 +214,22 @@ const dagaare = {
   body: (
     <>
       <p>
-        This project was part of a course on
-        <a href="http://courses.washington.edu/ling567/" target="_blank" rel="noopener noreferrer">Knowledge Engineering for NLP</a>
-        , taught by
-        <a href="http://faculty.washington.edu/ebender/" target="_blank" rel="noopener noreferrer">Emily Bender</a>
-        . Along with
-        <a href="https://www.linkedin.com/in/dwennermarko/" target="_blank" rel="noopener noreferrer">Drew Owens</a>
-        , I engineered a grammar for
-        <a href="https://glottolog.org/resource/languoid/id/sout2789" target="_blank" rel="noopener noreferrer">Dagaare</a>
-        , a Niger-Congo language spoken in Ghana. Despite being primarily a linguistics course,
-        there were a lot of programming concepts involved: in particular, we effectively used a
-        form of
-        <a href="https://en.wikipedia.org/wiki/Test-driven_development" target="_blank" rel="noopener noreferrer">Test-Driven Development</a>
-        , via
-        <code>[incr tsdb()]</code>
-        , to guide our progress.
+        This project was part of a course on <a href="http://courses.washington.edu/ling567/" target="_blank" rel="noopener noreferrer">Knowledge Engineering for NLP</a>,
+        taught by <a href="http://faculty.washington.edu/ebender/" target="_blank" rel="noopener noreferrer">Emily Bender</a>.
+        Along with <a href="https://www.linkedin.com/in/dwennermarko/" target="_blank" rel="noopener noreferrer">Drew Owens</a>,
+        I engineered a grammar for <a href="https://glottolog.org/resource/languoid/id/sout2789" target="_blank" rel="noopener noreferrer">Dagaare</a>,
+        a Niger-Congo language spoken in Ghana. Despite being primarily a linguistics course, there
+        were a lot of programming concepts involved: in particular, we effectively used a form
+        of <a href="https://en.wikipedia.org/wiki/Test-driven_development" target="_blank" rel="noopener noreferrer">Test-Driven Development</a>,
+        via <code>[incr tsdb()]</code>, to guide our progress.
       </p>
 
       <p className="pt-6">
         An advantage to using HPSG and MRS, like we did, is that sentences can be translated
         directly between grammars with a very high degree of accuracy. The culmination of this
-        course was a day where the class wired our various grammars together, along with a
-        <a href="http://www.delph-in.net/erg/" target="_blank" rel="noopener noreferrer">grammar for English</a>
-        , to translate sentences between the languages we&apos;d studied.
+        course was a day where the class wired our various grammars together, along with
+        a <a href="http://www.delph-in.net/erg/" target="_blank" rel="noopener noreferrer">grammar for English</a>,
+        to translate sentences between the languages we&apos;d studied.
       </p>
     </>
   )
@@ -278,23 +253,16 @@ const neam = {
   body: (
     <>
       <p>
-        I worked on NEAM along with
-        <a href="https://www.linkedin.com/in/vanessawoldengaracine" target="_blank" rel="noopener noreferrer">Sunny Woldenga-Racine</a>
-        and
-        <a href="https://www.linkedin.com/in/chrishaberland/" target="_blank" rel="noopener noreferrer">Chris Haberland</a>
-        as part of a special topics course at the University of Washington taught by
-        <a href="https://nelc.washington.edu/people/sarah-ketchley" target="_blank" rel="noopener noreferrer">Sarah Ketchley</a>
-        . The goal of the course was to augment historical documents gathered by and for the
-        <a href="http://www.emmabandrews.org/project/" target="_blank" rel="noopener noreferrer">Emma B. Andrews Diary Project</a>
-        . We leveraged the
-        <a href="https://nlp.stanford.edu/software/CRF-NER.html" target="_blank" rel="noopener noreferrer">Stanford Named Entity Recognizer</a>
-        to tag named entities within Emma B. Andrews&apos journals for cross-referencing.
+        I worked on NEAM along with <a href="https://www.linkedin.com/in/vanessawoldengaracine" target="_blank" rel="noopener noreferrer">Sunny Woldenga-Racine</a> and <a href="https://www.linkedin.com/in/chrishaberland/" target="_blank" rel="noopener noreferrer">Chris Haberland</a> as
+        part of a special topics course at the University of Washington taught by <a href="https://nelc.washington.edu/people/sarah-ketchley" target="_blank" rel="noopener noreferrer">Sarah Ketchley</a>.
+        The goal of the course was to augment historical documents gathered by and for the <a href="http://www.emmabandrews.org/project/" target="_blank" rel="noopener noreferrer">Emma B. Andrews Diary Project</a>.
+        We leveraged the <a href="https://nlp.stanford.edu/software/CRF-NER.html" target="_blank" rel="noopener noreferrer">Stanford Named Entity Recognizer</a> to
+        tag named entities within Emma B. Andrews&apos; journals for cross-referencing.
       </p>
 
       <p className="mt-6">
-        Among my larger contributions to the project was the use of
-        <code>JPype</code>
-        to bring the Stanford Parser into a Python setting. Our team as a whole was more
+        Among my larger contributions to the project was the use of <code>JPype</code> to
+        bring the Stanford Parser into a Python setting. Our team as a whole was more
         comfortable with Python than Java, so this enabled us to work more cohesively on the
         project.
       </p>
@@ -319,13 +287,9 @@ const portfolio = {
   body: (
     <>
       <p>
-        The layout for this site was unashamedly taken from
-        <a href="https://www.kevinpowell.co/" target="_blank" rel="noopener noreferrer">Kevin Powell</a>
-        &apos;s excellent course,
-        <a href="https://scrimba.com/learn/portfolio" target="_blank" rel="noopener noreferrer">
-          <strong>Build and deploy a portfolio on Digital Ocean</strong>
-        </a>
-        . I&apos;ve reimplemented it in React and Tailwind because&hellip;well, I just thought it
+        The layout for this site was unashamedly taken from <a href="https://www.kevinpowell.co/" target="_blank" rel="noopener noreferrer">Kevin Powell</a>&apos;s
+        excellent course, <a href="https://scrimba.com/learn/portfolio" target="_blank" rel="noopener noreferrer"><strong>Build and deploy a portfolio on Digital Ocean</strong></a>.
+        I&apos;ve reimplemented it in React and Tailwind because&hellip;well, I just thought it
         would be fun! Most of the interactivity is original, though I&apos;ll let you judge for
         yourself whether it&apos;s effective or not. I also chose to deploy it over Github Pages
         through the use of a Github Action, instead of deploying it on Digital Ocean.
@@ -356,21 +320,14 @@ const bettyBot = {
   body: (
     <>
       <p>
-        I wrote
-        <strong>Betty Bot</strong>
-        as a starter template for a JavaScript chatbot, based on an assignment I had in grad
-        school. Learners simply need to complete three functions in
-        <code>bot.js</code>
-        , and they&apos;ll immediately have a functioning chatbot. I leveraged the ability of
-        <code>
-          <a href="https://repl.it" target="_blank" rel="noopener noreferrer">repl.it</a>
-        </code>
-        to run persistent webservers to make the project even more extensible: using the chatbot
+        I wrote <strong>Betty Bot</strong> as a starter template for a JavaScript chatbot, based on
+        an assignment I had in grad school. Learners simply need to complete three functions
+        in <code>bot.js</code>, and they&apos;ll immediately have a functioning chatbot. I
+        leveraged the ability of <code><a href="https://repl.it" target="_blank" rel="noopener noreferrer">repl.it</a></code> to
+        run persistent webservers to make the project even more extensible: using the chatbot
         they had already created, learners can treat their bot as a Web API for incorporation into,
         e.g., a discord bot. Chatbots can also be combined; using this same idea of a chatbot as a
-        Web API, I created an example &quot;
-        <a href="https://repl.it/@GStill/ConversationHost" target="_blank" rel="noopener noreferrer">chatroom for chatbots</a>
-        .&quot;
+        Web API, I created an example &quot;<a href="https://repl.it/@GStill/ConversationHost" target="_blank" rel="noopener noreferrer">chatroom for chatbots</a>.&quot;
       </p>
 
       <p className="mt-6">

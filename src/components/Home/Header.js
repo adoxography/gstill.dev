@@ -76,8 +76,7 @@ const Header = ({ endSplashMode, setNavbarGhost }) => {
         <h1
           className="text-5xl md:text-6xl mb-1 leading-none"
         >
-          Hi, I&apos;m
-          <strong className="block font-semibold">Graham Still.</strong>
+          Hi, I&apos;m <strong className="block font-semibold">Graham Still.</strong>
         </h1>
 
         <p
