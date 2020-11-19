@@ -60,7 +60,7 @@ const Portfolio = ({ openModal }) => {
   };
 
   return (
-    <section id="work" className="bg-gray-400 text-gray-800 text-center py-20 px-8">
+    <section id="work" className="bg-gray-300 text-gray-800 text-center py-20 px-8">
       <header className="font-display font-semibold">
         <h2 className="text-4xl">
           My work
