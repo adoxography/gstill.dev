@@ -170,33 +170,6 @@ const pixels = {
   )
 };
 
-const showdown = {
-  title: 'Manitoba Showdown',
-  imgSrc: 'https://github.com/adoxography/the-showdown/blob/master/logo.png?raw=true',
-  links: {
-    visit: 'https://manitobashowdown.ca/',
-    source: 'https://github.com/adoxography/the-showdown'
-  },
-  description: 'Proof-of-concept for a social media-connected web app',
-  technologies: [
-    'React',
-    'JavaScript',
-    'HTML',
-    'CSS',
-    'Tailwind'
-  ],
-  body: (
-    <>
-      <p>
-        This project is a proof-of-concept demonstration for a website that uses social media
-        platforms as its back-end. The folks at the Manitoba Showdown were looking to create a site
-        to augment their existing Instagram and YouTube presence. Instead of running its own
-        database, this site uses the Instagram and YouTube APIs to populate its content.
-      </p>
-    </>
-  )
-};
-
 const dagaare = {
   title: 'Dagaare Grammar',
   imgSrc: 'https://upload.wikimedia.org/wikipedia/commons/b/b8/She-avm.png',
@@ -349,6 +322,5 @@ export default [
   portfolio,
   pixels,
   dagaare,
-  neam,
-  showdown
+  neam
 ];
