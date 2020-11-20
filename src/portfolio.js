@@ -4,6 +4,7 @@ import chatbotAvatar from './assets/images/robot.svg';
 import pixelDrawing from './assets/images/pixels.png';
 import alglangLogo from './assets/images/alglang.svg';
 import gstillLogo from './assets/images/logo.png';
+import periodicalLogo from './assets/images/periodical.svg';
 
 const alglang = {
   title: 'Database of Algonquian Language Structures',
@@ -314,10 +315,53 @@ const bettyBot = {
   )
 };
 
+const periodical = {
+  title: 'Periodical',
+  imgSrc: periodicalLogo,
+  links: {
+    visit: 'https://periodical-demo.herokuapp.com/',
+    source: 'https://github.com/adoxography/periodical'
+  },
+  description: 'A simple blogging platform designed to be blissfully simple to use',
+  technologies: [
+    'PHP',
+    'Laravel',
+    'JavaScript',
+    'Alpine.js',
+    'SCSS',
+    'BEM',
+    'SQL'
+  ],
+  body: (
+    <>
+      <p>
+        <strong>Periodical</strong> came about after a lot of not-so-subtle hinting from a family
+        member that he&apos;d like to start a blog. While there are lots of fantastic blogging
+        platforms already out there, few really cater to the demographic of people who really wish
+        they could have written their blog on a typewriter and sent it via snailmail to all of their
+        personal contacts instead of putting it on the internet. Knowing that I was going to have to
+        be the &quot;tech support&quot; for any blogging software my family member used, I decided
+        that it would be easiest for me to maintain something that I had written and knew inside and
+        out.
+      </p>
+
+      <p className="mt-6">
+        The philosophy of Periodical is that it should be completely intuitive
+        for <em>anyone</em> to use, regardless of their experience with technology. With that in
+        mind, it eschews &quot;advanced&quot; features available on some blogs, like layout tools,
+        in favour of a simple text editor approach. It also handles sign-in strictly via social
+        OAuth providers like Google and Facebook, to avoid the perennial &quot;I&apos;ve lost my
+        password&quot; dance of my older relatives.
+      </p>
+    </>
+  )
+};
+
 export default [
   alglang,
   countdown,
   streamlined,
+  periodical,
   bettyBot,
   portfolio,
   pixels,

@@ -31,7 +31,8 @@ const tagLinks = {
   JPype: 'https://jpype.readthedocs.io/en/latest/',
   BeautifulSoup: 'https://www.crummy.com/software/BeautifulSoup/bs4/doc/',
   MRS: 'https://en.wikipedia.org/wiki/Minimal_recursion_semantics',
-  SVM: 'https://en.wikipedia.org/wiki/Support_vector_machine'
+  SVM: 'https://en.wikipedia.org/wiki/Support_vector_machine',
+  SCSS: 'https://sass-lang.com/'
 };
 
 const headerStyles = {
