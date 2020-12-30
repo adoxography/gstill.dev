@@ -22,7 +22,7 @@ const App = () => {
   };
 
   return (
-    <div className={`h-screen ${canScroll ? 'overflow-auto' : 'overflow-hidden'}`} style={{ scrollBehavior: 'smooth' }}>
+    <div className={`scrollbar scrollbar-thumb-gray-600 scrollbar-track-gray-800 h-screen ${canScroll ? 'overflow-auto' : 'overflow-hidden'}`} style={{ scrollBehavior: 'smooth' }}>
       <Nav transparent={navbarGhost} isHidden={splashMode} />
 
       <Home endSplashMode={endSplashMode} setNavbarGhost={setNavbarGhost} openModal={openModal} />

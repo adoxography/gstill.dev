@@ -1,3 +1,5 @@
+const tailwindScrollbar = require('tailwind-scrollbar');
+
 module.exports = {
   purge: [
     './src/**/*.js',
@@ -67,7 +69,9 @@ module.exports = {
     translate: ['responsive', 'hover', 'focus', 'group-hover', 'group-focus'],
     zIndex: ['responsive', 'hover', 'focus']
   },
-  plugins: [],
+  plugins: [
+    tailwindScrollbar
+  ],
   future: {
     purgeLayersByDefault: true,
     removeDeprecatedGapUtilities: true
