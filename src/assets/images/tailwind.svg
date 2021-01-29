@@ -1,0 +1,10 @@
+<svg style="background: white" width="54" height="54" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+ <g>
+  <title>Layer 1</title>
+  <g id="svg_2" clip-path="url(#prefix__clip0)" stroke="null">
+   <path id="svg_3" clip-rule="evenodd" d="m27,10.8c-7.2,0 -11.7,3.6 -13.5,10.8c2.7,-3.6 5.85,-4.95 9.45,-4.05c2.054,0.513 3.522,2.004 5.147,3.653c2.647,2.687 5.711,5.797 12.403,5.797c7.2,0 11.7,-3.6 13.5,-10.8c-2.7,3.6 -5.85,4.95 -9.45,4.05c-2.054,-0.513 -3.522,-2.004 -5.147,-3.653c-2.647,-2.687 -5.711,-5.797 -12.403,-5.797zm-13.5,16.2c-7.2,0 -11.7,3.6 -13.5,10.8c2.7,-3.6 5.85,-4.95 9.45,-4.05c2.054,0.514 3.522,2.004 5.147,3.653c2.647,2.687 5.711,5.797 12.403,5.797c7.2,0 11.7,-3.6 13.5,-10.8c-2.7,3.6 -5.85,4.95 -9.45,4.05c-2.054,-0.513 -3.522,-2.004 -5.147,-3.653c-2.647,-2.687 -5.711,-5.797 -12.403,-5.797z" fill-rule="evenodd" fill="#06B6D4" stroke="null"/>
+  </g>
+  <rect fill="#1f2937" stroke-width="null" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="45" y="0" width="9" height="54" id="svg_1"/>
+  <rect fill="#4b5563" stroke-width="null" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="45" y="0" width="9" height="28" id="svg_4"/>
+ </g>
+</svg>

@@ -5,6 +5,7 @@ import pixelDrawing from './assets/images/pixels.png';
 import alglangLogo from './assets/images/alglang.svg';
 import gstillLogo from './assets/images/logo.png';
 import periodicalLogo from './assets/images/periodical.svg';
+import tailwindLogo from './assets/images/tailwind.svg';
 
 const alglang = {
   title: 'Database of Algonquian Language Structures',
@@ -55,6 +56,36 @@ const alglang = {
         interface to allow contributors to add more entries to the database without having to deal
         directly with the database. I&apos;m currently in the process of overhauling the entire
         website with the benefit of more experience in developing and designing applications.
+      </p>
+    </>
+  )
+};
+
+const tailwindScrollbar = {
+  title: 'tailwind-scrollbar',
+  imgSrc: tailwindLogo,
+  links: {
+    visit: 'https://tailwind-scrollbar-example.adoxography.repl.co/',
+    source: 'https://github.com/adoxography/tailwind-scrollbar'
+  },
+  description: 'A cross-browser plugin for styling scrollbars using Tailwind CSS',
+  technologies: [
+    'JavaScript',
+    'CSS',
+    'Tailwind'
+  ],
+  body: (
+    <>
+      <p>
+        I developed <strong>tailwind-scrollbar</strong> while working on a different project that
+        used Tailwind CSS. Styling scrollbars turned out to be a much more in-depth endeavor than I
+        had expected; Firefox and Webkit both have very different APIs for their scrollbars. After
+        I got it working, I extracted the plugin into a standalone repo.
+      </p>
+
+      <p className="mt-6">
+        Since its original publishing, I&apos;ve enhanced the plugin by adding tests, support for
+        dark mode, and rounded variants.
       </p>
     </>
   )
@@ -359,6 +390,7 @@ const periodical = {
 
 export default [
   alglang,
+  tailwindScrollbar,
   countdown,
   streamlined,
   periodical,
