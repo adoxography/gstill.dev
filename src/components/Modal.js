@@ -3,42 +3,6 @@ import PropTypes from 'prop-types';
 
 import Button from './Button';
 
-const tagLinks = {
-  Laravel: 'https://laravel.com',
-  PHP: 'https://php.net',
-  Python: 'https://python.org',
-  'Vue.js': 'https://vuejs.org',
-  React: 'https://reactjs.org',
-  'Alpine.js': 'https://github.com/alpinejs/alpine',
-  Tailwind: 'https://tailwindcss.com',
-  Electron: 'https://electronjs.org',
-  openSMILE: 'https://www.audeering.com/opensmile/',
-  openXBOW: 'https://github.com/openXBOW/openXBOW',
-  'scikit-learn': 'https://scikit-learn.org/',
-  Bulma: 'https://bulma.io',
-  'Stanford Parser': 'https://nlp.stanford.edu/software/lex-parser.shtml',
-  Wikidata: 'https://www.wikidata.org/',
-  LKB: 'http://moin.delph-in.net/LkbTop',
-  '[incr tsdb()]': 'http://www.delph-in.net/itsdb/',
-  'LinGo Grammar Matrix': 'http://matrix.ling.washington.edu/index.html',
-  HPSG: 'https://en.wikipedia.org/wiki/Head-driven_phrase_structure_grammar',
-  Java: 'https://java.com',
-  'Express.js': 'https://expressjs.com',
-  HTML: 'https://developer.mozilla.org/en-US/docs/Web/HTML',
-  CSS: 'https://developer.mozilla.org/en-US/docs/Web/CSS',
-  JavaScript: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
-  BEM: 'http://getbem.com/',
-  JPype: 'https://jpype.readthedocs.io/en/latest/',
-  BeautifulSoup: 'https://www.crummy.com/software/BeautifulSoup/bs4/doc/',
-  MRS: 'https://en.wikipedia.org/wiki/Minimal_recursion_semantics',
-  SVM: 'https://en.wikipedia.org/wiki/Support_vector_machine',
-  SCSS: 'https://sass-lang.com/',
-  AWS: 'https://aws.amazon.com',
-  Unity: 'https://unity.com',
-  'Google Analytics': 'https://analytics.google.com',
-  'C#': 'https://docs.microsoft.com/en-us/dotnet/csharp/'
-};
-
 const headerStyles = {
   gridTemplateAreas: '"img title" "img tags"',
   gridTemplateColumns: 'min-content auto',
@@ -55,29 +19,22 @@ const imageStyles = {
   minWidth: '250px'
 };
 
-const TechnologyTag = ({ name }) => {
-  if ({}.hasOwnProperty.call(tagLinks, name)) {
-    return (
-      <a
-        className="block m-1 px-3 py-1 bg-indigo-200 text-gray-900 rounded-full"
-        href={tagLinks[name]}
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        {name}
-      </a>
-    );
-  }
-
-  return (
-    <p className="m-1 px-3 py-1 bg-indigo-200 rounded-full">
-      {name}
-    </p>
-  );
-};
+const TechnologyTag = ({ technology }) => (
+  <a
+    className="block m-1 px-3 py-1 bg-indigo-200 text-gray-900 rounded-full"
+    href={technology.url}
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    {technology.name}
+  </a>
+);
 
 TechnologyTag.propTypes = {
-  name: PropTypes.string.isRequired
+  technology: PropTypes.shape({
+    name: PropTypes.string.isRequired,
+    url: PropTypes.string.isRequired
+  }).isRequired
 };
 
 const ShowMore = () => (
@@ -238,8 +195,8 @@ const Modal = ({ hide, value, isOpen }) => {
 
             <ul className="flex max-w-screen-sm flex-wrap self-start md:ml-2 mt-2 justify-center md:justify-start">
               {technologies && technologies.map(technology => (
-                <li key={`${title}-${technology}`}>
-                  <TechnologyTag name={technology} />
+                <li key={`${title}-${technology.name}`}>
+                  <TechnologyTag technology={technology} />
                 </li>
               ))}
             </ul>
@@ -270,7 +227,10 @@ Modal.propTypes = {
     imgSrc: PropTypes.string,
     title: PropTypes.string,
     body: PropTypes.node,
-    technologies: PropTypes.arrayOf(PropTypes.string),
+    technologies: PropTypes.arrayOf(PropTypes.shape({
+      name: PropTypes.string.isRequired,
+      url: PropTypes.string.isRequired
+    })),
     links: PropTypes.shape({
       visit: PropTypes.string,
       source: PropTypes.string

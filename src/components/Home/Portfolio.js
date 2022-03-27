@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import items from '../../portfolio';
+import items from '../../data/portfolio';
 
 const portfolioStyles = {
   gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))'
@@ -50,7 +50,11 @@ PortfolioItem.propTypes = {
   value: PropTypes.shape({
     imgSrc: PropTypes.string,
     title: PropTypes.string,
-    description: PropTypes.string
+    description: PropTypes.string,
+    technologies: PropTypes.arrayOf(PropTypes.shape({
+      name: PropTypes.string.isRequired,
+      url: PropTypes.string.isRequired
+    }))
   }).isRequired
 };
 

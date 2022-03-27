@@ -1,11 +1,13 @@
 import React from 'react';
 
-import chatbotAvatar from './assets/images/robot.svg';
-import pixelDrawing from './assets/images/pixels.png';
-import alglangLogo from './assets/images/alglang.svg';
-import gstillLogo from './assets/images/logo.png';
-import periodicalLogo from './assets/images/periodical.svg';
-import tailwindLogo from './assets/images/tailwind.svg';
+import chatbotAvatar from '../assets/images/robot.svg';
+import pixelDrawing from '../assets/images/pixels.png';
+import alglangLogo from '../assets/images/alglang.svg';
+import gstillLogo from '../assets/images/logo.png';
+import periodicalLogo from '../assets/images/periodical.svg';
+import tailwindLogo from '../assets/images/tailwind.svg';
+
+import technologies from './technologies';
 
 const alglang = {
   title: 'Database of Algonquian Language Structures',
@@ -16,15 +18,15 @@ const alglang = {
   },
   description: 'A project to provide basic information about the sounds and grammar of the Algonquian languages',
   technologies: [
-    'PHP',
-    'Laravel',
-    'HTML',
-    'CSS',
-    'JavaScript',
-    'Vue.js',
-    'Alpine.js',
-    'SQL',
-    'Tailwind'
+    technologies.php,
+    technologies.laravel,
+    technologies.html,
+    technologies.css,
+    technologies.js,
+    technologies.vue,
+    technologies.alpine,
+    technologies.sql,
+    technologies.tailwind
   ],
   body: (
     <>
@@ -70,9 +72,9 @@ const tailwindScrollbar = {
   },
   description: 'A cross-browser plugin for styling scrollbars using Tailwind CSS',
   technologies: [
-    'JavaScript',
-    'CSS',
-    'Tailwind'
+    technologies.js,
+    technologies.css,
+    technologies.tailwind
   ],
   body: (
     <>
@@ -99,11 +101,11 @@ const countdown = {
   },
   description: 'A simple, unobtrusive timer app for MacOS that can float over fullscreen windows',
   technologies: [
-    'React',
-    'Electron',
-    'CSS',
-    'HTML',
-    'JavaScript'
+    technologies.react,
+    technologies.electron,
+    technologies.css,
+    technologies.html,
+    technologies.js
   ],
   body: (
     <>
@@ -137,11 +139,11 @@ const streamlined = {
   },
   description: 'My master\'s project, classifying genre of spoken audio samples',
   technologies: [
-    'Python',
-    'SVM',
-    'openSMILE',
-    'openXBOW',
-    'scikit-learn'
+    technologies.python,
+    technologies.svm,
+    technologies.openSmile,
+    technologies.openXbow,
+    technologies.scikitLearn
   ],
   body: (
     <>
@@ -175,11 +177,11 @@ const pixels = {
   },
   description: 'A web app for teaching computational thinking with art',
   technologies: [
-    'JavaScript',
-    'Vue.js',
-    'HTML',
-    'CSS',
-    'Bulma'
+    technologies.js,
+    technologies.vue,
+    technologies.html,
+    technologies.css,
+    technologies.bulma
   ],
   body: (
     <>
@@ -210,11 +212,11 @@ const dagaare = {
   },
   description: 'A grammar for the Dagaare (a language spoken in Ghana), expressed using the HPSG framework',
   technologies: [
-    'HPSG',
-    'LinGo Grammar Matrix',
-    '[incr tsdb()]',
-    'LKB',
-    'MRS'
+    technologies.hpsg,
+    technologies.linGo,
+    technologies.tsdb,
+    technologies.lkb,
+    technologies.mrs
   ],
   body: (
     <>
@@ -248,12 +250,12 @@ const neam = {
   },
   description: 'Automated named entity markup on historical texts',
   technologies: [
-    'Java',
-    'Python',
-    'JPype',
-    'BeautifulSoup',
-    'Stanford Parser',
-    'Wikidata'
+    technologies.java,
+    technologies.python,
+    technologies.jpype,
+    technologies.beautifulSoup,
+    technologies.stanfordParser,
+    technologies.wikidata
   ],
   body: (
     <>
@@ -283,11 +285,11 @@ const portfolio = {
   },
   description: 'The site you\'re looking at right now!',
   technologies: [
-    'React',
-    'JavaScript',
-    'HTML',
-    'CSS',
-    'Tailwind'
+    technologies.react,
+    technologies.js,
+    technologies.html,
+    technologies.css,
+    technologies.tailwind
   ],
   body: (
     <>
@@ -316,11 +318,11 @@ const bettyBot = {
   },
   description: 'A starting template for exploring JavaScript in a chatbot setting',
   technologies: [
-    'JavaScript',
-    'HTML',
-    'CSS',
-    'BEM',
-    'Express.js'
+    technologies.js,
+    technologies.html,
+    technologies.css,
+    technologies.bem,
+    technologies.express
   ],
   body: (
     <>
@@ -355,13 +357,13 @@ const periodical = {
   },
   description: 'A simple blogging platform designed to be blissfully simple to use',
   technologies: [
-    'PHP',
-    'Laravel',
-    'JavaScript',
-    'Alpine.js',
-    'SCSS',
-    'BEM',
-    'SQL'
+    technologies.php,
+    technologies.laravel,
+    technologies.js,
+    technologies.alpine,
+    technologies.scss,
+    technologies.bem,
+    technologies.sql
   ],
   body: (
     <>
@@ -396,15 +398,15 @@ const umeGames = {
   },
   description: 'Learn to use Unity - completely through the browser',
   technologies: [
-    'React',
-    'HTML',
-    'CSS',
-    'JavaScript',
-    'Google Analytics',
-    'Python',
-    'AWS',
-    'Unity',
-    'C#'
+    technologies.react,
+    technologies.html,
+    technologies.css,
+    technologies.js,
+    technologies.googleAnalytics,
+    technologies.python,
+    technologies.aws,
+    technologies.unity,
+    technologies.cSharp
   ],
   body: (
     <>
