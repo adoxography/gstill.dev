@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 const FORMCARRY_URL = 'https://formcarry.com/s/s8LKiVs3g3xJ';
 const successMessage = 'Thanks! I\'ll get back to you as soon as I can!';
