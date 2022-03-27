@@ -3,6 +3,7 @@ import Nav from './components/Layout/Nav';
 import Home from './components/Home/index';
 import Footer from './components/Layout/Footer';
 import Modal from './components/Modal';
+import './index.css';
 
 const App = () => {
   const [splashMode, setSplashMode] = useState(true);

@@ -1,8 +1,8 @@
 const tailwindScrollbar = require('tailwind-scrollbar');
 
 module.exports = {
-  purge: [
-    './src/**/*.js',
+  content: [
+    './src/**/*.{js,jsx}',
     './public/index.html'
   ],
   theme: {
