@@ -8,7 +8,7 @@ const tagLinks = {
   PHP: 'https://php.net',
   Python: 'https://python.org',
   'Vue.js': 'https://vuejs.org',
-  React: 'https://reacjs.org',
+  React: 'https://reactjs.org',
   'Alpine.js': 'https://github.com/alpinejs/alpine',
   Tailwind: 'https://tailwindcss.com',
   Electron: 'https://electronjs.org',
@@ -32,7 +32,11 @@ const tagLinks = {
   BeautifulSoup: 'https://www.crummy.com/software/BeautifulSoup/bs4/doc/',
   MRS: 'https://en.wikipedia.org/wiki/Minimal_recursion_semantics',
   SVM: 'https://en.wikipedia.org/wiki/Support_vector_machine',
-  SCSS: 'https://sass-lang.com/'
+  SCSS: 'https://sass-lang.com/',
+  AWS: 'https://aws.amazon.com',
+  Unity: 'https://unity.com',
+  'Google Analytics': 'https://analytics.google.com',
+  'C#': 'https://docs.microsoft.com/en-us/dotnet/csharp/'
 };
 
 const headerStyles = {

@@ -388,7 +388,53 @@ const periodical = {
   )
 };
 
+const umeGames = {
+  title: 'ume.games',
+  imgSrc: 'https://www.ume.games/fav-ume-32-32.png',
+  links: {
+    visit: 'https://ume.games'
+  },
+  description: 'Learn to use Unity - completely through the browser',
+  technologies: [
+    'React',
+    'HTML',
+    'CSS',
+    'JavaScript',
+    'Google Analytics',
+    'Python',
+    'AWS',
+    'Unity',
+    'C#'
+  ],
+  body: (
+    <>
+      <p>
+        <strong>ume.games</strong> is an online community that enables kids to learn to use Unity
+        through a web browser. High quality video lessons are provided to guide students through
+        their journeys of becoming game designers and game developers.
+      </p>
+
+      <p className="mt-6">
+        As the lead developer on ume.games, I implemented a complete redesign of its front end,
+        and was responsible for hooking up its Google Analytics integrations. I also had an active
+        role in designing and maintaining its back end services, and developed and maintained
+        custom Unity plugins in C#. I designed and developed custom LiveOps solutions to ensure
+        quality experiences for both students and instructors and set up CI/CD pipelines to
+        streamline the developer experience.
+      </p>
+
+      <p className="mt-6">
+        As a content developer and instructor, I created lesson plans and curricula for teaching
+        coding through Unity using C# and Unity&apos;s visual scripting solution, Bolt, which were
+        taught to students from 12 years of age to young adults. I actively instructed on the
+        platform and trained new instructors to do the same.
+      </p>
+    </>
+  )
+};
+
 export default [
+  umeGames,
   alglang,
   tailwindScrollbar,
   countdown,
