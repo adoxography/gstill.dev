@@ -7,7 +7,7 @@ import gstillLogo from '../assets/images/logo.png';
 import periodicalLogo from '../assets/images/periodical.svg';
 import tailwindLogo from '../assets/images/tailwind.svg';
 
-import technologies from './technologies';
+import { technologies } from './technologies';
 
 const alglang = {
   title: 'Database of Algonquian Language Structures',
