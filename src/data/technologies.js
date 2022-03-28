@@ -159,6 +159,11 @@ export const technologies = {
     url: 'http://www.delph-in.net/itsdb/',
     category: OTHER
   },
+  typescript: {
+    name: 'TypeScript',
+    url: 'https://typescriptlang.org',
+    category: PROGRAMMING_LANGUAGE
+  },
   unity: {
     name: 'Unity',
     url: 'https://unity.com',

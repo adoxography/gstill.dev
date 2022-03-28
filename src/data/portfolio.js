@@ -6,6 +6,7 @@ import alglangLogo from '../assets/images/alglang.svg';
 import gstillLogo from '../assets/images/logo.png';
 import periodicalLogo from '../assets/images/periodical.svg';
 import tailwindLogo from '../assets/images/tailwind.svg';
+import kInARowLogo from '../assets/images/kinarow.svg';
 
 import { technologies } from './technologies';
 
@@ -435,10 +436,45 @@ const umeGames = {
   )
 };
 
+const kInARow = {
+  title: 'K-in-a-Row',
+  imgSrc: kInARowLogo,
+  links: {
+    visit: 'https://adoxography.github.io/kinarow',
+    source: 'https://github.com/adoxography/kinarow'
+  },
+  description: 'An implementation of an m, n, k-game that exposes an interface for user-created bot players',
+  technologies: [
+    technologies.html,
+    technologies.css,
+    technologies.js,
+    technologies.bem,
+    technologies.alpine,
+    technologies.typescript
+  ],
+  body: (
+    <>
+      <p>
+        A simple implementation of an m, n, k-game (the generalized version of Tic-Tac-Toe), where
+        players are able to select any M, N, and K for their game. Move validation and winning and
+        losing are handled through the interface.
+      </p>
+
+      <p className="mt-6">
+        The twist to this project comes in its ability to communicate with a remote server which
+        can act as a player - provided it exposes the correct API. Documentation on this API
+        specification is given <a href="https://github.com/adoxography/kinarow/blob/main/README.md#creating-a-bot-player" target="_blank" rel="noopener noreferrer">in the project README</a>.
+        I also created a reference implementation, called <a href="https://github.com/adoxography/kira" target="_blank" rel="noopener noreferrer"><strong>KIRA</strong></a>, in Typescript, which uses the <a href="https://en.wikipedia.org/wiki/Minimax" target="_blank" rel="noopener noreferrer">minimax</a> algorithm with <a href="https://en.wikipedia.org/wiki/Alpha%E2%80%93beta_pruning" target="_blank" rel="noopener noreferrer">alpha-beta pruning</a> to find optimal moves.
+      </p>
+    </>
+  )
+};
+
 export default [
   umeGames,
   alglang,
   tailwindScrollbar,
+  kInARow,
   countdown,
   streamlined,
   periodical,
