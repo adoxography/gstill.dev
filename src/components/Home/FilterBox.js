@@ -7,7 +7,7 @@ const FilterBox = ({ options, onChange }) => (
         Filters
       </h3>
     </div>
-    <div className="flex flex-wrap justify-center gap-4 p-4">
+    <div className="flex flex-wrap justify-center gap-4 w-full p-4">
       {Object.entries(options).map(([category, technologies]) => (
         <div key={category} className="max-w-xs">
           <h4 className="text-indigo-600 font-semibold mb-2 uppercase text-sm tracking-widest">{category}</h4>
