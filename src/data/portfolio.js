@@ -16,7 +16,7 @@ const alglang = {
     visit: 'https://preview.alglang.net',
     source: 'https://github.com/alglang/alglang'
   },
-  description: 'A project to provide basic information about the sounds and grammar of the Algonquian languages',
+  description: 'Providing information about the grammar of the Algonquian languages',
   technologies: [
     technologies.php,
     technologies.laravel,
